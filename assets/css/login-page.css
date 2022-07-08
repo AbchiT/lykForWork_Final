@@ -222,4 +222,19 @@ p:last-child{ margin-bottom: 0!important;}
 .lft_part_log img {
     margin-bottom: 20px;
 }
+.textlyk h2 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: normal;
+}
+.textlyk {
+    margin-left: 20px;
+}
+}
+@media only screen and (max-height: 638px){
+    .textlyk p {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 }
