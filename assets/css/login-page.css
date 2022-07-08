@@ -204,3 +204,22 @@ p:last-child{ margin-bottom: 0!important;}
 /*---------------email-password-login-end----------------------*/
 
 
+@media only screen and (max-height: 744px){
+.left_login {
+    padding: 30px 0;
+}
+}
+
+@media only screen and (max-height: 724px){
+.left_login {
+    padding: 20px 0;
+}
+}
+@media only screen and (max-height: 700px){
+.left_login {
+    padding: 10px 0;
+}
+.lft_part_log img {
+    margin-bottom: 20px;
+}
+}
