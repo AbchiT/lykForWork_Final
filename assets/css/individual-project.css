@@ -52,97 +52,35 @@
 }
 
 /*tab css*/
-
-.individual-project .folder-topic .wrapper {
-  max-width: 50rem;
-  width: 100%;
-  margin: 30px 0;
+.tabs{
+height: auto;
 }
 
-.individual-project .folder-topic .tabs {
-  position: relative;
-  height: 11.75rem;
+.carousel[c-b2b_ServiceCenters_b2b_ServiceCenters] {
+    padding-top: 0;
+    height: 340px;
+    margin-bottom: 0;
 }
+.carousel__slide[c-b2b_ServiceCenters_b2b_ServiceCenters] {
 
-.individual-project .folder-topic .tabs::before,
-.individual-project .folder-topic .tabs::after {
-  content: "";
-  display: table;
+    height: 100%;
+    /* Now Height is 30% */
 }
-
-.individual-project .folder-topic .tabs::after {
-  clear: both;
+.carousel[c-b2b_ServiceCenters_b2b_ServiceCenters]::before, .carousel[c-b2b_ServiceCenters_b2b_ServiceCenters]::after, .carousel__prev[c-b2b_ServiceCenters_b2b_ServiceCenters], .carousel__next[c-b2b_ServiceCenters_b2b_ServiceCenters] {
+    position: absolute;
+    top: 50%;
+    margin-top: 0%;
+    transform: translateY(-50%);
 }
-
-.individual-project .folder-topic .tab {
-  float: left;
+.carousel[c-b2b_ServiceCenters_b2b_ServiceCenters]::before {
+    left: 51px;
+    transform: translateY(-50%);
+    top: 50%;
 }
-
-.individual-project .folder-topic .tab-switch {
-  display: none;
+.carousel[c-b2b_ServiceCenters_b2b_ServiceCenters]::after {
+    top: 50%;
+    transform: translateY(-50%);
 }
-
-.individual-project .folder-topic .tab-label {
-  position: relative;
-  top: 0;
-  padding: 15px 10px;
-  background-color: #fff;
-  border: none;
-  border-radius: 5px;
-  margin-right: 10px;
-  transition: all 0.25s;
-  font-size: 12px;
-}
-
-.individual-project .folder-topic .tab-label:hover {
-  top: -0.25rem;
-  transition: top 0.25s;
-}
-
-.individual-project .folder-topic .tab-content {
-  height: 6rem;
-  position: absolute;
-  z-index: 1;
-  top: 2.75em;
-  left: 0;
-  padding-top: 30px;
-  color: #2c3e50;
-  opacity: 0;
-  transition: all 0.35s;
-}
-
-.individual-project .folder-topic .tab-switch:checked + .tab-label {
-  background: #fff;
-  color: #2c3e50;
-  border-bottom: 0;
-  border-right: 0.125rem solid #fff;
-  transition: all 0.35s;
-  z-index: 1;
-  top: -0.0625rem;
-}
-.individual-project .folder-topic .tab-switch:checked + label + .tab-content {
-  z-index: 2;
-  opacity: 1;
-  transition: all 0.35s;
-}
-
-.individual-project .folder-topic .tabs .fa-solid {
-  padding-right: 10px;
-}
-
-.individual-project .folder-topic .tabs .box2 {
-  background-color: #fff;
-  border-radius: 5px;
-  margin-right: 10px;
-  text-align: center;
-  align-items: center;
-  padding: 60px 50px;
-}
-
-.individual-project .my-team-dashboard .emp {
-  font-size: 14px;
-}
-
 /*media query start*/
 
 @media (max-width: 1367px) {

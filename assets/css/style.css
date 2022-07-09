@@ -679,13 +679,14 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 }
 .today-meet-box p::after {
   position: absolute;
-  content: "";
-  height: 100%;
-  width: 3px;
-  border-radius: 0 15px 15px 0;
-  background-color: #5cc5d0;
-  left: 0;
-  top: 0;
+    content: "";
+    height: 29px;
+    width: 4px;
+    border-radius: 0 15px 15px 0;
+    background-color: #5cc5d0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 /* content */
 .project-carousel .item {
