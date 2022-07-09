@@ -721,6 +721,10 @@ table.ui-datepicker-calendar tbody td.highlight > a {
   justify-content: space-between;
   margin-bottom: 10px;
 }
+.project-heading p{
+ color: #838383;
+   font-size: 14px;
+}
 .project-box-top {
   margin-bottom: 10px;
 }
