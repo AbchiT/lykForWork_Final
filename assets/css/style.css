@@ -934,6 +934,10 @@ table.ui-datepicker-calendar tbody td.highlight > a {
   font-size: 18px;
   font-weight: 400;
 }
+.project-heading{
+ color:#838383;
+  font-size: 14px;
+}
 .pending-high h6 {
   font-size: 12px;
   font-weight: 400;
@@ -1032,6 +1036,11 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 .my-team-dashboard h3 {
   margin: 15px 0;
 }
+.my-team-dashboard p {
+  color:#838383;
+  font-size: 14px;
+}
+
 .my-team-add-btn-dashboard {
   display: flex;
   margin-bottom: 40px;
@@ -1208,7 +1217,12 @@ table.ui-datepicker-calendar tbody td.highlight > a {
   color: #fff;
 }
 .pend-head-dash h3 {
-  margin-right: 15px;
+  margin-right: 5px;
+}
+.pend-head-dash p {
+  margin-right: 30px;
+  color: #838383;
+  font-size: 14px;
 }
 /* media query */
 
