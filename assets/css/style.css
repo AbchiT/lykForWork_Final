@@ -938,10 +938,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
   font-size: 18px;
   font-weight: 400;
 }
-.project-heading{
- color:#838383;
-  font-size: 14px;
-}
+
 .pending-high h6 {
   font-size: 12px;
   font-weight: 400;
@@ -1043,6 +1040,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 .my-team-dashboard p {
   color:#838383;
   font-size: 14px;
+  margin-right: 5px;
 }
 
 .my-team-add-btn-dashboard {
