@@ -1017,6 +1017,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
   background-color: #fff;
   margin-right: 10px;
   padding: 10px 8px;
+  border-radius: 10px;
 }
 .notes-item-dashboard h4 {
   font-size: 18px;
