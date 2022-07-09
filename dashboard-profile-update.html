@@ -22,6 +22,10 @@
       href="assets/icon/favicon-16x16.png"
     />
     <link rel="manifest" href="assets/icon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
     <link rel="stylesheet" href="assets/css/dashboard-profile.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>LykForWork</title>
@@ -164,23 +168,56 @@
             </div>
             <div class="picbg">
               <div class="takephotos">
-           <div class="upload-box">
-            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="21" cy="21" r="21" fill="#F5F6F8"/>
-<path d="M32.776 14.8299H29.563V11.6426C29.563 11.2828 29.2803 11 28.9204 11H9.64259C9.28275 11 9 11.2828 9 11.6426V27.5018C9 27.8617 9.28275 28.1444 9.64259 28.1444H12.8556V31.3574C12.8556 31.7172 13.1383 32 13.4982 32H32.776C33.1359 32 33.4186 31.7172 33.4186 31.3574V15.4725C33.4186 15.1383 33.1359 14.8299 32.776 14.8299V14.8299ZM32.1334 27.2448L29.3317 24.1604C28.7148 23.4664 27.5067 23.4664 26.8899 24.1604L25.5276 25.6513L21.4149 20.9475C21.0807 20.562 20.5923 20.3563 20.0783 20.3563C19.5643 20.3563 19.0758 20.5876 18.7416 20.9733L14.115 26.2682L14.1151 16.1152H32.1078V27.245L32.1334 27.2448ZM10.2852 26.8592V12.2851H28.3035V14.8555H13.4982C13.1383 14.8555 12.8556 15.1383 12.8556 15.4981V26.8592H10.2852ZM14.1408 30.6891V28.1958L19.7185 21.7956C19.847 21.6414 20.0269 21.6414 20.0783 21.6414C20.1554 21.6414 20.3354 21.667 20.4382 21.7956L25.0134 27.0392C25.142 27.1677 25.2962 27.2704 25.5019 27.2704C25.7075 27.2961 25.8617 27.1933 25.9903 27.0648L27.841 25.0343C27.9437 24.9315 28.0466 24.9057 28.1237 24.9057C28.2008 24.9057 28.3037 24.9314 28.4065 25.0343L32.1593 29.147V30.7149H14.1409L14.1408 30.6891Z" fill="#2E2E2E"/>
-<path d="M29.8457 19.945C29.8457 20.7968 29.1552 21.4873 28.3034 21.4873C27.4517 21.4873 26.7612 20.7968 26.7612 19.945C26.7612 19.0933 27.4517 18.4028 28.3034 18.4028C29.1552 18.4028 29.8457 19.0933 29.8457 19.945" fill="#2E2E2E"/>
-</svg>
+                <div class="upload-box">
+                  <svg
+                    width="42"
+                    height="42"
+                    viewBox="0 0 42 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="21" cy="21" r="21" fill="#F5F6F8" />
+                    <path
+                      d="M32.776 14.8299H29.563V11.6426C29.563 11.2828 29.2803 11 28.9204 11H9.64259C9.28275 11 9 11.2828 9 11.6426V27.5018C9 27.8617 9.28275 28.1444 9.64259 28.1444H12.8556V31.3574C12.8556 31.7172 13.1383 32 13.4982 32H32.776C33.1359 32 33.4186 31.7172 33.4186 31.3574V15.4725C33.4186 15.1383 33.1359 14.8299 32.776 14.8299V14.8299ZM32.1334 27.2448L29.3317 24.1604C28.7148 23.4664 27.5067 23.4664 26.8899 24.1604L25.5276 25.6513L21.4149 20.9475C21.0807 20.562 20.5923 20.3563 20.0783 20.3563C19.5643 20.3563 19.0758 20.5876 18.7416 20.9733L14.115 26.2682L14.1151 16.1152H32.1078V27.245L32.1334 27.2448ZM10.2852 26.8592V12.2851H28.3035V14.8555H13.4982C13.1383 14.8555 12.8556 15.1383 12.8556 15.4981V26.8592H10.2852ZM14.1408 30.6891V28.1958L19.7185 21.7956C19.847 21.6414 20.0269 21.6414 20.0783 21.6414C20.1554 21.6414 20.3354 21.667 20.4382 21.7956L25.0134 27.0392C25.142 27.1677 25.2962 27.2704 25.5019 27.2704C25.7075 27.2961 25.8617 27.1933 25.9903 27.0648L27.841 25.0343C27.9437 24.9315 28.0466 24.9057 28.1237 24.9057C28.2008 24.9057 28.3037 24.9314 28.4065 25.0343L32.1593 29.147V30.7149H14.1409L14.1408 30.6891Z"
+                      fill="#2E2E2E"
+                    />
+                    <path
+                      d="M29.8457 19.945C29.8457 20.7968 29.1552 21.4873 28.3034 21.4873C27.4517 21.4873 26.7612 20.7968 26.7612 19.945C26.7612 19.0933 27.4517 18.4028 28.3034 18.4028C29.1552 18.4028 29.8457 19.0933 29.8457 19.945"
+                      fill="#2E2E2E"
+                    />
+                  </svg>
 
- <button type="button" id="btnActivateCamera">Take Photos</button>
-           </div>     
-   <div class="upload-box"><svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="21" cy="21" r="21" fill="#F5F6F8"/>
-<path d="M35.4657 16.4288L35.4866 16.4224L35.5061 16.4125C35.7863 16.2702 36.1039 16.2877 36.3508 16.4129C36.5974 16.5381 36.75 16.7558 36.75 17.0052V26.9978C36.75 27.2452 36.5979 27.4623 36.351 27.5873C36.1039 27.7124 35.7863 27.7298 35.5061 27.5875L35.4866 27.5776L35.4657 27.5712L31.18 26.265L30.8571 26.1666V26.5041V29.1157C30.8571 29.9877 30.0393 30.75 28.9643 30.75H9.14286C8.06784 30.75 7.25 29.9877 7.25 29.1157V13.8843C7.25 13.0123 8.06784 12.25 9.14286 12.25H28.9643C30.0393 12.25 30.8571 13.0123 30.8571 13.8843V17.4959V17.8334L31.18 17.735L35.4657 16.4288ZM28.6964 29.1302H28.9464V28.8802V14.1198V13.8698H28.6964H9.41071H9.16071V14.1198V28.8802V29.1302H9.41071H28.6964ZM34.5269 25.2054L34.8393 25.2859V24.9633V19.0367V18.7138L34.5267 18.7946L31.0446 19.6946L30.8571 19.743V19.9366V24.0663V24.2601L31.0448 24.3084L34.5269 25.2054ZM15.5714 18.6384H11.8214C11.8136 18.6384 11.8077 18.6368 11.8036 18.6351V17.2574C11.8077 17.2557 11.8136 17.2541 11.8214 17.2541H15.5714C15.5793 17.2541 15.5852 17.2557 15.5893 17.2574V18.6351C15.5852 18.6368 15.5793 18.6384 15.5714 18.6384ZM15.5718 21.2296H11.8218C11.814 21.2296 11.808 21.2281 11.8039 21.2263V19.8487C11.808 19.8469 11.814 19.8453 11.8218 19.8453H15.5718C15.5796 19.8453 15.5856 19.8469 15.5897 19.8487V21.2263C15.5856 21.2281 15.5796 21.2296 15.5718 21.2296Z" fill="#2E2E2E" stroke="white" stroke-width="0.5"/>
-</svg>
+                  <button type="button" id="btnActivateCamera">
+                    Take Photos
+                  </button>
+                </div>
+                <div class="upload-box">
+                  <svg
+                    width="42"
+                    height="42"
+                    viewBox="0 0 42 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="21" cy="21" r="21" fill="#F5F6F8" />
+                    <path
+                      d="M35.4657 16.4288L35.4866 16.4224L35.5061 16.4125C35.7863 16.2702 36.1039 16.2877 36.3508 16.4129C36.5974 16.5381 36.75 16.7558 36.75 17.0052V26.9978C36.75 27.2452 36.5979 27.4623 36.351 27.5873C36.1039 27.7124 35.7863 27.7298 35.5061 27.5875L35.4866 27.5776L35.4657 27.5712L31.18 26.265L30.8571 26.1666V26.5041V29.1157C30.8571 29.9877 30.0393 30.75 28.9643 30.75H9.14286C8.06784 30.75 7.25 29.9877 7.25 29.1157V13.8843C7.25 13.0123 8.06784 12.25 9.14286 12.25H28.9643C30.0393 12.25 30.8571 13.0123 30.8571 13.8843V17.4959V17.8334L31.18 17.735L35.4657 16.4288ZM28.6964 29.1302H28.9464V28.8802V14.1198V13.8698H28.6964H9.41071H9.16071V14.1198V28.8802V29.1302H9.41071H28.6964ZM34.5269 25.2054L34.8393 25.2859V24.9633V19.0367V18.7138L34.5267 18.7946L31.0446 19.6946L30.8571 19.743V19.9366V24.0663V24.2601L31.0448 24.3084L34.5269 25.2054ZM15.5714 18.6384H11.8214C11.8136 18.6384 11.8077 18.6368 11.8036 18.6351V17.2574C11.8077 17.2557 11.8136 17.2541 11.8214 17.2541H15.5714C15.5793 17.2541 15.5852 17.2557 15.5893 17.2574V18.6351C15.5852 18.6368 15.5793 18.6384 15.5714 18.6384ZM15.5718 21.2296H11.8218C11.814 21.2296 11.808 21.2281 11.8039 21.2263V19.8487C11.808 19.8469 11.814 19.8453 11.8218 19.8453H15.5718C15.5796 19.8453 15.5856 19.8469 15.5897 19.8487V21.2263C15.5856 21.2281 15.5796 21.2296 15.5718 21.2296Z"
+                      fill="#2E2E2E"
+                      stroke="white"
+                      stroke-width="0.5"
+                    />
+                  </svg>
 
-<label for="fileupload" id="btnCapture" class="d-none">Upload Photo</label>
-<input type="file" id="fileupload" accept="image/*" style="display: none;">
-</div> 
+                  <label for="fileupload" id="btnCapture" class="d-none"
+                    >Upload Photo</label
+                  >
+                  <input
+                    type="file"
+                    id="fileupload"
+                    accept="image/*"
+                    style="display: none"
+                  />
+                </div>
               </div>
             </div>
             <div class="profile-right">
@@ -638,14 +675,24 @@
             <div class="profile-item">
               <p>Date Of Birth</p>
 
-                <input type="text" name="" id="" value="12/02/1993" onfocus="(this.type='date')">
-                <img src="assets/img/tick-icon.png" alt="">
-
+              <input
+                type="text"
+                name=""
+                id=""
+                value="12/02/1993"
+                onfocus="(this.type='date')"
+              />
+              <img src="assets/img/tick-icon.png" alt="" />
             </div>
             <div class="profile-item">
               <p>Phone</p>
-              <input type="text" value="+91 987 456 1234" name="" id="" onfocus="(this.type='number')">
-              <img src="assets/img/tick-icon.png" alt="">
+              <input
+                id="phone"
+                type="tel"
+                name="phone"
+                value="+91 987 456 1234"
+              />
+              <img src="assets/img/tick-icon.png" alt="" />
             </div>
             <div class="profile-item">
               <p>Country Of Birth</p>
@@ -656,20 +703,33 @@
           <div class="profile-content-right">
             <div class="profile-item">
               <p>Email</p>
-              <input type="email" value="johnfrillo@dummy.com" name="" id="" onfocus="(this.type='email')">
-              <img src="assets/img/tick-icon.png" alt="">
+              <input
+                type="email"
+                value="johnfrillo@dummy.com"
+                name=""
+                id=""
+                onfocus="(this.type='email')"
+              />
+              <img src="assets/img/tick-icon.png" alt="" />
             </div>
             <div class="profile-item">
               <p>Gender</p>
-              <h5>Male</h5>
+              <select name="gender" id="gender">
+                <option value="select The Gender">Your Gender</option>
+                <option selected value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Transgender</option>
+              </select>
             </div>
             <div class="profile-item">
-              <p>Cityy Of Birth</p>
+              <p>City Of Birth</p>
               <h5>Kolkata</h5>
             </div>
           </div>
         </div>
-        <div class="profile-edit-btn"><a href="dashboard-profile.html">Save</a></div>
+        <div class="profile-edit-btn">
+          <a href="dashboard-profile.html">Save</a>
+        </div>
       </div>
     </section>
     <section class="right-side">
@@ -736,10 +796,18 @@
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script>
+      const phoneInputField = document.querySelector("#phone");
+      const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+    </script>
     <script>
       $(function () {
         $("#fileupload").change(function (event) {
@@ -749,48 +817,52 @@
         });
       });
 
-      
-
       var videoCapture;
-$(document).ready(function () {
-    videoCapture = document.getElementById('capturevideo');
-});
-$(document).on('click', '#btnActivateCamera', function () {
-    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-        // access video stream from webcam
-        navigator.mediaDevices.getUserMedia({ video: true }).then(function (stream) {
-            // on success, stream it in video tag 
-            window.localStream = stream;
-            videoCapture.srcObject = stream;
-            videoCapture.play();
-            activateCamera();
-        }).catch(e => {
-            // on failure/error, alert message. 
-            alert("Please Allow: Use Your Camera!");
-        });
-    }
-});
-$(document).on('click', '#btnDeactivateCamera', function () {
-    // stop video streaming if any
-    localStream.getTracks().forEach(function (track) {
-        if (track.readyState == 'live' && track.kind === 'video') {
+      $(document).ready(function () {
+        videoCapture = document.getElementById("capturevideo");
+      });
+      $(document).on("click", "#btnActivateCamera", function () {
+        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+          // access video stream from webcam
+          navigator.mediaDevices
+            .getUserMedia({ video: true })
+            .then(function (stream) {
+              // on success, stream it in video tag
+              window.localStream = stream;
+              videoCapture.srcObject = stream;
+              videoCapture.play();
+              activateCamera();
+            })
+            .catch((e) => {
+              // on failure/error, alert message.
+              alert("Please Allow: Use Your Camera!");
+            });
+        }
+      });
+      $(document).on("click", "#btnDeactivateCamera", function () {
+        // stop video streaming if any
+        localStream.getTracks().forEach(function (track) {
+          if (track.readyState == "live" && track.kind === "video") {
             track.stop();
             deactivateCamera();
-        }
-    });
-});
-$(document).on('click', '#btnCapture', function () {
-    document.getElementById('capturecanvas').getContext('2d').drawImage(videoCapture, 0, 0, 230, 230);
-});
-$(document).ready(function(){
-  $(".custom-file").click(function(){
-    $(".picbg").toggleClass("d-show");
-  });
-});
-$(".custom-file").click(function () {
-  $(".bg-all").toggleClass("opacitybg");
-  $("body").toggleClass("opacitybgnav");
-});
+          }
+        });
+      });
+      $(document).on("click", "#btnCapture", function () {
+        document
+          .getElementById("capturecanvas")
+          .getContext("2d")
+          .drawImage(videoCapture, 0, 0, 230, 230);
+      });
+      $(document).ready(function () {
+        $(".custom-file").click(function () {
+          $(".picbg").toggleClass("d-show");
+        });
+      });
+      $(".custom-file").click(function () {
+        $(".bg-all").toggleClass("opacitybg");
+        $("body").toggleClass("opacitybgnav");
+      });
     </script>
     <script src="assets/js/main.js"></script>
   </body>

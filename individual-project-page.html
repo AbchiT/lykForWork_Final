@@ -28,6 +28,7 @@
     <link rel="manifest" href="assets/icon/site.webmanifest" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/notes-zero-data.css">
     <link rel="stylesheet" href="assets/css/individual-project.css">
 
     <title>LykForWork</title>
@@ -608,7 +609,7 @@
               <p>Deadline 26 May,2022</p>
             </div>
             <div class="pend-right">
-              <input type="radio" checked name="pend-radio">
+              <input type="checkbox" checked name="pend-checkbox">
             </div>
           </div>
           <div class="pend-box pend-box-low row-align-center">
@@ -617,7 +618,7 @@
               <p>Deadline 26 May,2022</p>
             </div>
             <div class="pend-right">
-              <input type="radio" name="pend-radio">
+              <input type="checkbox" name="pend-checkbox">
             </div>
           </div>
           <div class="pend-box pend-box-med row-align-center">
@@ -626,7 +627,7 @@
               <p>Deadline 26 May,2022</p>
             </div>
             <div class="pend-right">
-              <input type="radio" name="pend-radio">
+              <input type="checkbox" name="pend-checkbox">
             </div>
           </div>
         </div>
@@ -634,53 +635,51 @@
         <!-- task-topic design end-->
         <div class="folder-topic">
         <h3 class="h3-heading">Files / Folder</h3>
-        <h4 class="h4-heading"><span>My Folder </span> Folders Shared With You</h4>
-          <div class="wrapper">
+        <!-- <h4 class="h4-heading"><span>My Folder </span> Folders Shared With You</h4> -->
+        <div class="wrapper">
           <div class="tabs">
             <div class="tab">
-              <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
-              <label for="tab-1" class="tab-label">
-              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="15" height="15" x="0" y="0" viewBox="0 0 465 465" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" id="XMLID_52_" d="m466.6 199.1c-8.3-11.3-21.1-17.8-35.1-17.8h-10.6v-28.5c0-24-19.5-43.5-43.6-43.5h-127.2c-7.3 0-14.3-2.9-19.5-8l-20-19.9c-8.2-8.2-19.1-12.7-30.7-12.7h-99.4c-24 0-43.5 19.5-43.5 43.6v253.7c-.3 9.7 2.6 19.3 8.5 27.3 8.4 11.4 21.3 18 35.5 18h305.9c19.1 0 35.8-12.3 41.6-30.6l44.7-142.9c4.1-13.3 1.7-27.4-6.6-38.7zm-413.7-86.8c0-15.2 12.4-27.6 27.5-27.6h99.5c7.3 0 14.2 2.9 19.5 8l20 19.9c8.2 8.2 19.1 12.7 30.7 12.7h127.3c15.2 0 27.6 12.4 27.6 27.5v28.5h-280c-19.1 0-35.8 12.3-41.6 30.5l-30.6 97.6v-197.1zm404.9 120.8-44.7 142.9c-3.6 11.6-14.2 19.3-26.3 19.3h-305.9c-9 0-17.2-4.2-22.6-11.4-5.3-7.3-6.9-16.4-4.2-25l44.5-142.3c3.6-11.6 14.2-19.3 26.3-19.3h306.5c8.9 0 17 4.1 22.2 11.2 5.4 7.2 6.9 16.1 4.2 24.6z" fill="#000000" data-original="#000000" class=""></path></g></svg>
-          Project Details</label>
-              <div class="tab-content row-all-center">
-                <div class="box2">File 1</div>
+              <input
+                type="radio"
+                name="css-tabs"
+                id="tab-1"
+                checked
+                class="tab-switch"
+              />
+              <label for="tab-1" class="tab-label">My Folders</label>
+              <div class="tab-content">
+                <div class="tab-content-wrap">
+                  <div class="tab-content-body">
+                    <div class="tab-content-body-wrap row-align-center">
+                      <!-- tab content -->
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="tab">
-              <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
-              <label for="tab-2" class="tab-label">
-              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="15" height="15" x="0" y="0" viewBox="0 0 465 465" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" id="XMLID_52_" d="m466.6 199.1c-8.3-11.3-21.1-17.8-35.1-17.8h-10.6v-28.5c0-24-19.5-43.5-43.6-43.5h-127.2c-7.3 0-14.3-2.9-19.5-8l-20-19.9c-8.2-8.2-19.1-12.7-30.7-12.7h-99.4c-24 0-43.5 19.5-43.5 43.6v253.7c-.3 9.7 2.6 19.3 8.5 27.3 8.4 11.4 21.3 18 35.5 18h305.9c19.1 0 35.8-12.3 41.6-30.6l44.7-142.9c4.1-13.3 1.7-27.4-6.6-38.7zm-413.7-86.8c0-15.2 12.4-27.6 27.5-27.6h99.5c7.3 0 14.2 2.9 19.5 8l20 19.9c8.2 8.2 19.1 12.7 30.7 12.7h127.3c15.2 0 27.6 12.4 27.6 27.5v28.5h-280c-19.1 0-35.8 12.3-41.6 30.5l-30.6 97.6v-197.1zm404.9 120.8-44.7 142.9c-3.6 11.6-14.2 19.3-26.3 19.3h-305.9c-9 0-17.2-4.2-22.6-11.4-5.3-7.3-6.9-16.4-4.2-25l44.5-142.3c3.6-11.6 14.2-19.3 26.3-19.3h306.5c8.9 0 17 4.1 22.2 11.2 5.4 7.2 6.9 16.1 4.2 24.6z" fill="#000000" data-original="#000000" class=""></path></g></svg>
-              Project Details</label>
-              <div class="tab-content row-all-center">
-                <div class="box2">File 1</div>
-                <div class="box2">File 2</div>
-              </div>
-            </div>
-            <div class="tab">
-              <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
-              <label for="tab-3" class="tab-label">
-              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="15" height="15" x="0" y="0" viewBox="0 0 465 465" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" id="XMLID_52_" d="m466.6 199.1c-8.3-11.3-21.1-17.8-35.1-17.8h-10.6v-28.5c0-24-19.5-43.5-43.6-43.5h-127.2c-7.3 0-14.3-2.9-19.5-8l-20-19.9c-8.2-8.2-19.1-12.7-30.7-12.7h-99.4c-24 0-43.5 19.5-43.5 43.6v253.7c-.3 9.7 2.6 19.3 8.5 27.3 8.4 11.4 21.3 18 35.5 18h305.9c19.1 0 35.8-12.3 41.6-30.6l44.7-142.9c4.1-13.3 1.7-27.4-6.6-38.7zm-413.7-86.8c0-15.2 12.4-27.6 27.5-27.6h99.5c7.3 0 14.2 2.9 19.5 8l20 19.9c8.2 8.2 19.1 12.7 30.7 12.7h127.3c15.2 0 27.6 12.4 27.6 27.5v28.5h-280c-19.1 0-35.8 12.3-41.6 30.5l-30.6 97.6v-197.1zm404.9 120.8-44.7 142.9c-3.6 11.6-14.2 19.3-26.3 19.3h-305.9c-9 0-17.2-4.2-22.6-11.4-5.3-7.3-6.9-16.4-4.2-25l44.5-142.3c3.6-11.6 14.2-19.3 26.3-19.3h306.5c8.9 0 17 4.1 22.2 11.2 5.4 7.2 6.9 16.1 4.2 24.6z" fill="#000000" data-original="#000000" class=""></path></g></svg>
-              Project Details</label>
-              <div class="tab-content row-all-center">
-                <div class="box2">File 1</div>
-                <div class="box2">File 2</div>
-                <div class="box2">File 3</div>
-              </div>
-            </div>
-            <div class="tab">
-              <input type="radio" name="css-tabs" id="tab-4" class="tab-switch">
-              <label for="tab-4" class="tab-label">
-              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="15" height="15" x="0" y="0" viewBox="0 0 465 465" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" id="XMLID_52_" d="m466.6 199.1c-8.3-11.3-21.1-17.8-35.1-17.8h-10.6v-28.5c0-24-19.5-43.5-43.6-43.5h-127.2c-7.3 0-14.3-2.9-19.5-8l-20-19.9c-8.2-8.2-19.1-12.7-30.7-12.7h-99.4c-24 0-43.5 19.5-43.5 43.6v253.7c-.3 9.7 2.6 19.3 8.5 27.3 8.4 11.4 21.3 18 35.5 18h305.9c19.1 0 35.8-12.3 41.6-30.6l44.7-142.9c4.1-13.3 1.7-27.4-6.6-38.7zm-413.7-86.8c0-15.2 12.4-27.6 27.5-27.6h99.5c7.3 0 14.2 2.9 19.5 8l20 19.9c8.2 8.2 19.1 12.7 30.7 12.7h127.3c15.2 0 27.6 12.4 27.6 27.5v28.5h-280c-19.1 0-35.8 12.3-41.6 30.5l-30.6 97.6v-197.1zm404.9 120.8-44.7 142.9c-3.6 11.6-14.2 19.3-26.3 19.3h-305.9c-9 0-17.2-4.2-22.6-11.4-5.3-7.3-6.9-16.4-4.2-25l44.5-142.3c3.6-11.6 14.2-19.3 26.3-19.3h306.5c8.9 0 17 4.1 22.2 11.2 5.4 7.2 6.9 16.1 4.2 24.6z" fill="#000000" data-original="#000000" class=""></path></g></svg>
-              Project Details</label>
-              <div class="tab-content row-all-center">
-                <div class="box2">File 1</div>
-                <div class="box2">File 2</div>
-                <div class="box2">File 3</div>
-                <div class="box2">File 4</div>
+            <div class="tab notes-tab-second">
+              <input
+                type="radio"
+                name="css-tabs"
+                id="tab-2"
+                class="tab-switch"
+              />
+              <label for="tab-2" class="tab-label"
+                >Folders Shared With You</label
+              >
+              <div class="tab-content">
+                <div class="tab-content-wrap">
+                  
+                  <div class="tab-content-body">
+                    <div class="tab-content-body-wrap row-align-center">
+                      <!-- tab content 2 -->
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          </div>
+        </div>
         </div>
       <!-- folder topic design end-->
         <div class="my-team-dashboard">
