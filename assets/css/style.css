@@ -1094,7 +1094,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
   margin-bottom: 40px;
   position: relative;
   /* justify-content: center; */
-  margin-left: 15px;
+  left: 15px;
 }
 .profile-images-card h3 {
   font-size: 16px;
@@ -1111,7 +1111,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
   height: 1px;
   background-color: #f4f4f4;
   bottom: -20px;
-  left: 0;
+  left: 15px;
 }
 .profile-images {
   position: relative;
