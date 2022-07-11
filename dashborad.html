@@ -7,7 +7,7 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/icon/apple-touch-icon.png"fprofi
+      href="assets/icon/apple-touch-icon.png" fprofi
     />
     <link
       rel="icon"
@@ -32,6 +32,106 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>DashBoard - Lykeforwork</title>
+	  
+	  
+	  <style>
+	  
+	 .radiobtn {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+ .radiobtn label {
+    display: block;
+    background: #ffffff;
+    color: #444;
+    border-radius: 5px;
+    padding: 3px 15px;
+    border: 2px solid #ffffff;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+ .radiobtn label:after, .radiobtn label:before {
+    content: "";
+    position: absolute;
+    right: 11px;
+    top: 28px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: #ffffff;
+    border: 2px solid #D9D9D9;
+}
+ .radiobtn label:before {
+	 background: transparent;
+    transition: 0.1s width cubic-bezier(0.075, 0.82, 0.165, 1) 0s, 0.3s height cubic-bezier(0.075, 0.82, 0.165, 2) 0.1s;
+    z-index: 2;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 9px;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNS4zIDEzLjIiPiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE0LjcuOGwtLjQtLjRhMS43IDEuNyAwIDAgMC0yLjMuMUw1LjIgOC4yIDMgNi40YTEuNyAxLjcgMCAwIDAtMi4zLjFMLjQgN2ExLjcgMS43IDAgMCAwIC4xIDIuM2wzLjggMy41YTEuNyAxLjcgMCAwIDAgMi40LS4xTDE1IDMuMWExLjcgMS43IDAgMCAwLS4yLTIuM3oiIGRhdGEtbmFtZT0iUGZhZCA0Ii8+PC9zdmc+);
+}
+ .radiobtn input[type=radio] {
+    display: none;
+    position: absolute;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+ .radiobtn input[type=radio]:checked + label {
+    background: #ffffff;
+    animation-name: blink;
+    animation-duration: 1s;
+    border-color: #ffffff;
+}
+ .radiobtn input[type=radio]:checked + label:after {
+    background: #222222;
+}
+ .radiobtn input[type=radio]:checked + label:before {
+	 width: 15px;
+	 height: 15px;
+}
+/*
+ @keyframes blink {
+	 0% {
+		 background-color: #fdcb77;
+	}
+	 10% {
+		 background-color: #fdcb77;
+	}
+	 11% {
+		 background-color: #fdd591;
+	}
+	 29% {
+		 background-color: #fdd591;
+	}
+	 30% {
+		 background-color: #fdcb77;
+	}
+	 50% {
+		 background-color: #fdd591;
+	}
+	 45% {
+		 background-color: #fdcb77;
+	}
+	 50% {
+		 background-color: #fdd591;
+	}
+	 100% {
+		 background-color: #fdcb77;
+	}
+}
+		
+*/
+	
+	  
+	  </style>
+	  
+	  
   </head>
   
   <body class="dashboard">
@@ -839,38 +939,75 @@
         </div>
         <div class="chat-dash" id="firstEle">
           <div class="pend-box pend-box-high row-align-center">
+			  
+			  <div class="radiobtn">
+		<input type="radio" id="louie" name="drone" value="louie" />
+		<label for="louie"><div class="pend-right">
+              <h3>High</h3>
+              <h4>D&J banner design</h4>
+              <p>Deadline 25 May,2022</p>
+            </div>
+				  
+				  
+				  </label>
+	</div>
+			  
+<!--
             <div class="pend-right">
               <h3>High</h3>
               <h4>D&J banner design</h4>
               <p>Deadline 25 May,2022</p>
             </div>
             <div class="pend-right">
+
               <input type="radio" checked name="pend-radio">
             </div>
+-->
           </div>
           <div class="pend-box pend-box-low row-align-center">
-            <div class="pend-right">
-              <h3>Low</h3>
+			  <div class="radiobtn">
+		<input type="radio" id="huey" name="drone" value="huey" checked />
+		<label for="huey"><div class="pend-right">
+              <h3>High</h3>
               <h4>D&J banner design</h4>
               <p>Deadline 25 May,2022</p>
             </div>
-            <div class="pend-right">
-              <input type="radio" name="pend-radio">
-            </div>
+				  
+				  
+				  </label>
+	</div>
+
           </div>
           <div class="pend-box pend-box-med row-align-center">
-            <div class="pend-right">
-              <h3>Medium</h3>
+			   <div class="radiobtn">
+		<input type="radio" id="dewey" name="drone" value="dewey" />
+		<label for="dewey"><div class="pend-right">
+              <h3>High</h3>
               <h4>D&J banner design</h4>
               <p>Deadline 25 May,2022</p>
             </div>
-            <div class="pend-right">
-              <input type="radio" name="pend-radio">
-            </div>
+				  
+				  
+				  </label>
+	</div>
+
           </div>
         </div>
         <div class="chat-dash-next" id="1">
           <div class="pend-box pend-box-high row-align-center">
+			  
+			     <div class="radiobtn">
+		<input type="radio" id="dewey1" name="drone" value="dewey" />
+		<label for="dewey1"><div class="pend-right">
+              <h3>High</h3>
+              <h4>D&J banner design</h4>
+              <p>Deadline 25 May,2022</p>
+            </div>
+				  
+				  
+				  </label>
+	</div>
+<!--
             <div class="pend-right">
               <h3>High Task</h3>
               <h4>D&J banner design</h4>
@@ -879,8 +1016,22 @@
             <div class="pend-right">
               <input type="radio" checked name="pend-radio">
             </div>
+-->
           </div>
           <div class="pend-box pend-box-low row-align-center">
+			  
+			     <div class="radiobtn">
+		<input type="radio" id="dewey2" name="drone" value="dewey" />
+		<label for="dewey2"><div class="pend-right">
+              <h3>High</h3>
+              <h4>D&J banner design</h4>
+              <p>Deadline 25 May,2022</p>
+            </div>
+				  
+				  
+				  </label>
+	</div>
+<!--
             <div class="pend-right">
               <h3>Low Task</h3>
               <h4>D&J banner design</h4>
@@ -889,8 +1040,22 @@
             <div class="pend-right">
               <input type="radio" name="pend-radio">
             </div>
+-->
           </div>
           <div class="pend-box pend-box-med row-align-center">
+			  
+			     <div class="radiobtn">
+		<input type="radio" id="dewey3" name="drone" value="dewey" />
+		<label for="dewey3"><div class="pend-right">
+              <h3>High</h3>
+              <h4>D&J banner design</h4>
+              <p>Deadline 25 May,2022</p>
+            </div>
+				  
+				  
+				  </label>
+	</div>
+<!--
             <div class="pend-right">
               <h3>Medium Task</h3>
               <h4>D&J banner design</h4>
@@ -899,10 +1064,23 @@
             <div class="pend-right">
               <input type="radio" name="pend-radio">
             </div>
+-->
           </div>
         </div>
         <div class="chat-dash-next" id="2">
           <div class="pend-box pend-box-high row-align-center">
+			     <div class="radiobtn">
+		<input type="radio" id="dewey4" name="drone" value="dewey" />
+		<label for="dewey4"><div class="pend-right">
+              <h3>High</h3>
+              <h4>D&J banner design</h4>
+              <p>Deadline 25 May,2022</p>
+            </div>
+				  
+				  
+				  </label>
+	</div>
+<!--
             <div class="pend-right">
               <h3>High Q</h3>
               <h4>D&J banner design</h4>
@@ -911,8 +1089,22 @@
             <div class="pend-right">
               <input type="radio" checked name="pend-radio">
             </div>
+-->
           </div>
           <div class="pend-box pend-box-low row-align-center">
+			  
+			     <div class="radiobtn">
+		<input type="radio" id="dewey5" name="drone" value="dewey" />
+		<label for="dewey5"><div class="pend-right">
+              <h3>High</h3>
+              <h4>D&J banner design</h4>
+              <p>Deadline 25 May,2022</p>
+            </div>
+				  
+				  
+				  </label>
+	</div>
+<!--
             <div class="pend-right">
               <h3>Low Q</h3>
               <h4>D&J banner design</h4>
@@ -921,8 +1113,22 @@
             <div class="pend-right">
               <input type="radio" name="pend-radio">
             </div>
+-->
           </div>
           <div class="pend-box pend-box-med row-align-center">
+			  
+			     <div class="radiobtn">
+		<input type="radio" id="dewey6" name="drone" value="dewey" />
+		<label for="dewey6"><div class="pend-right">
+              <h3>High</h3>
+              <h4>D&J banner design</h4>
+              <p>Deadline 25 May,2022</p>
+            </div>
+				  
+				  
+				  </label>
+	</div>
+<!--
             <div class="pend-right">
               <h3>Medium Q</h3>
               <h4>D&J banner design</h4>
@@ -931,10 +1137,23 @@
             <div class="pend-right">
               <input type="radio" name="pend-radio">
             </div>
+-->
           </div>
         </div>
         <div class="chat-dash-next" id="3">
           <div class="pend-box pend-box-high row-align-center">
+			     <div class="radiobtn">
+		<input type="radio" id="dewey7" name="drone" value="dewey" />
+		<label for="dewey7"><div class="pend-right">
+              <h3>High</h3>
+              <h4>D&J banner design</h4>
+              <p>Deadline 25 May,2022</p>
+            </div>
+				  
+				  
+				  </label>
+	</div>
+<!--
             <div class="pend-right">
               <h3>High R</h3>
               <h4>D&J banner design</h4>
@@ -943,8 +1162,22 @@
             <div class="pend-right">
               <input type="radio" checked name="pend-radio">
             </div>
+-->
           </div>
           <div class="pend-box pend-box-low row-align-center">
+			  
+			     <div class="radiobtn">
+		<input type="radio" id="dewey8" name="drone" value="dewey" />
+		<label for="dewey8"><div class="pend-right">
+              <h3>High</h3>
+              <h4>D&J banner design</h4>
+              <p>Deadline 25 May,2022</p>
+            </div>
+				  
+				  
+				  </label>
+	</div>
+<!--
             <div class="pend-right">
               <h3>Low R</h3>
               <h4>D&J banner design</h4>
@@ -953,8 +1186,22 @@
             <div class="pend-right">
               <input type="radio" name="pend-radio">
             </div>
+-->
           </div>
           <div class="pend-box pend-box-med row-align-center">
+			  
+			     <div class="radiobtn">
+		<input type="radio" id="dewey9" name="drone" value="dewey" />
+		<label for="dewey9"><div class="pend-right">
+              <h3>High</h3>
+              <h4>D&J banner design</h4>
+              <p>Deadline 25 May,2022</p>
+            </div>
+				  
+				  
+				  </label>
+	</div>
+<!--
             <div class="pend-right">
               <h3>Medium R</h3>
               <h4>D&J banner design</h4>
@@ -963,6 +1210,7 @@
             <div class="pend-right">
               <input type="radio" name="pend-radio">
             </div>
+-->
           </div>
         </div>
             </div>
