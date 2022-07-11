@@ -148,7 +148,7 @@
 }
 
 .modal-header {
-  padding: 12px 0px;
+  padding: 12px 10px;
   text-align: center;
 }
 .modal-body {
@@ -309,4 +309,14 @@
   .add-event-right h3 {
     margin-top: 10px;
   }
+}
+.add-event-people-btn {
+  padding: 12px 0;
+}
+.add-event-people-btn button {
+  background: #5cc5d0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
 }
