@@ -12,6 +12,9 @@
 .feed-top input {
   width: 70%;
   height: 30px;
+   border-radius: 10px;
+   background-color: rgb(217 217 217 / 10%);
+   border: 1px solid #E1E2E5;
 }
 .feed-row {
   flex-wrap: wrap;
@@ -45,6 +48,8 @@
 .feedAbout h5 {
   width: 80%;
   margin-bottom: 10px;
+    font-size: 17px;
+    color: #2E2E2E;
 }
 .feedAbout h5 {
   width: 80%;
@@ -53,9 +58,9 @@
 }
 .feedAbout p {
   font-size: 14px;
-  color: rgb(109, 101, 101);
-  position: relative;
-  margin-bottom: 20px;
+    color: #838383;
+    position: relative;
+    margin-bottom: 20px;
 }
 .feedAbout p::after {
   position: absolute;
@@ -86,15 +91,22 @@
 
 .feed-dropdown-wrapper input[type="radio"] + label {
   cursor: pointer;
-  padding-left: 2px;
+    padding: 5px 2px;
   position: relative;
+}
+.feed-dropdown-wrapper li input[type="radio"]:checked + label {
+    background-color: rgba(92,197,208,20%);
+    padding: 5px 2px;
+    width: 100%;
+    overflow: hidden;
+    /* border-radius: 11px; */
 }
 .feed-dropdown-wrapper input[type="radio"] + label:after {
   right: 10px;
   position: absolute;
   content: "";
-  width: 24px;
-  height: 24px;
+  width: 17px;
+  height: 17px;
   border-radius: 50%;
   /* background: #dcdbe5; */
   border: 1px solid #838383;
@@ -103,7 +115,7 @@
 .feed-dropdown-wrapper input[type="radio"]:checked + label:after {
   right: 10px;
   background: #5cc5d0;
-  border: 2px solid #fff;
+  border: 3.5px solid #fff;
   -webkit-box-shadow: 0px 0px 0px 2px #5cc5d0;
   box-shadow: 0px 0px 0px 2px #5cc5d0;
 }
@@ -112,10 +124,11 @@
   border-radius: 15px;
   position: absolute;
   border: 1px solid #b3b3bf;
-  padding: 10px;
+/*  padding: 10px;*/
   right: -7px;
   top: 30px;
   width: 180px;
+	overflow: hidden;
   z-index: 30;
 }
 .feed-dropdown-wrapper .dropdown-content ul,
@@ -145,9 +158,9 @@
 }
 .feed-dropdown-wrapper .icon-wrapper li {
   border-bottom: 1px solid #dcdbe5;
-  padding-bottom: 10px;
-  max-height: 32px;
-  margin-top: 15px;
+  padding: 0px;
+  max-height: max-content;
+/*  margin-top: 15px;*/
   color: #2f255b;
 }
 .feed-dropdown-wrapper .icon-wrapper li:first-child {
@@ -179,7 +192,7 @@
   margin-right: 5px;
 }
 .feed-top-second {
-  margin-left: 30px;
+  margin-left: 34px;
   margin-top: 20px;
 }
 .feed-top-user {
