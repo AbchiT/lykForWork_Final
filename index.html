@@ -68,6 +68,7 @@
               name="email"
               class="field"
               id="emailInput"
+              maxlength="35"
               required
             />
             <span class="emailView"></span>
@@ -79,6 +80,7 @@
               class="field"
               name="password"
               id="passwordInput"
+              maxlength="35"
               required
             />
             <span class="passView" onclick="visibleFunction()"></span>
@@ -107,30 +109,33 @@
         x.type = "password";
       }
     }
-    fuun
+    fuun;
     function login() {
-        if ($("#emailInput").val() == "lykeforwork@gmail.com" && $("#passwordInput").val() == "lykforwork123@") {
+      if (
+        $("#emailInput").val() == "lykeforwork@gmail.com" &&
+        $("#passwordInput").val() == "lykforwork123@"
+      ) {
         setTimeout("pageRedirect()", 100);
-        } 
-        else if($("#emailInput").val() == ""){
-        alert("Please enter an email address."); 
-       }
-       else if($("#passwordInput").val() == ""){
-        alert("Password cannot be blank!"); 
-       }
-        else if($("#emailInput").val() == "" || $("#emailInput").val() != "lykeforwork@gmail.com"){
-        alert("Wrong email id."); 
-       }
-       else if($("#passwordInput").val() == "" || $("#passwordInput").val() != "lykforwork123@"){
-        alert("Wrong password."); 
-       }
-       else{
-        alert("You are not a valid user"); 
-       }
-        }
-        function pageRedirect() {
-          window.location.href = "dashborad.html";
-        }      
-
+      } else if ($("#emailInput").val() == "") {
+        alert("Please enter an email address.");
+      } else if ($("#passwordInput").val() == "") {
+        alert("Password cannot be blank!");
+      } else if (
+        $("#emailInput").val() == "" ||
+        $("#emailInput").val() != "lykeforwork@gmail.com"
+      ) {
+        alert("Wrong email id.");
+      } else if (
+        $("#passwordInput").val() == "" ||
+        $("#passwordInput").val() != "lykforwork123@"
+      ) {
+        alert("Wrong password.");
+      } else {
+        alert("You are not a valid user");
+      }
+    }
+    function pageRedirect() {
+      window.location.href = "dashborad.html";
+    }
   </script>
 </html>
