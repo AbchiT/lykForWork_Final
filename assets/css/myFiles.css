@@ -27,7 +27,7 @@
   align-items: flex-end;
 }
 .folder-item-a:hover {
-  background-color: #5CC5D0;
+  background-color: #5cc5d0;
 }
 .folder-item-a:hover button {
   color: #fff;
@@ -57,7 +57,7 @@
   left: -48px;
 }
 .folder-item-bottom button {
-  color: #5CC5D0;
+  color: #5cc5d0;
   border: none;
   background: none;
   margin-bottom: 5px;
@@ -140,14 +140,14 @@
 
 .close:hover,
 .close:focus {
-  color: #5CC5D0;
+  color: #5cc5d0;
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid #5CC5D0;
+  border: 1px solid #5cc5d0;
 }
 
 .modal-header {
-  padding: 12px 0px;
+  padding: 12px 10px;
   text-align: center;
 }
 .modal-body {
@@ -172,10 +172,10 @@
   padding: 10px;
 }
 .modal-body a.modal-member:nth-child(1) {
-  color: #5CC5D0;
+  color: #5cc5d0;
 }
 .modal-body a.modal-member:nth-child(3) {
-  color: #5CC5D0;
+  color: #5cc5d0;
 }
 .my-file-modal-right-icon {
   position: absolute;
@@ -187,7 +187,7 @@
 }
 .modal-btn a {
   padding: 8px 10px;
-  background-color: #5CC5D0;
+  background-color: #5cc5d0;
   border-radius: 20px;
   margin: 0 auto;
   font-size: 14px;
