@@ -507,38 +507,38 @@ table.ui-datepicker-calendar tbody td.highlight > a {
   border-radius: 15px;
 }
 .ui-datepicker-header {
- position: relative;
-    margin-bottom: 15px;
-    align-items: flex-start;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
+  position: relative;
+  margin-bottom: 15px;
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
 }
 .ui-datepicker-calendar span {
-    font-size: 13px;
-    font-weight: 400;
-    color: #8F9BB3;
+  font-size: 13px;
+  font-weight: 400;
+  color: #8f9bb3;
 }
 .ui-datepicker-header a.ui-datepicker-prev {
   position: absolute;
-    left: 0;
-    top: 0;
-    cursor: pointer;
-    border: 1px solid #E1E4EB;
-    padding: 0px 6px;
-    border-radius: 5px;
-	font-size: 17px;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  border: 1px solid #e1e4eb;
+  padding: 0px 6px;
+  border-radius: 5px;
+  font-size: 17px;
 }
 .ui-datepicker-header a.ui-datepicker-next {
   position: absolute;
   right: 0;
   top: 0;
   cursor: pointer;
-  border: 1px solid #E1E4EB;
+  border: 1px solid #e1e4eb;
   padding: 0px 6px;
   border-radius: 5px;
-	font-size: 17px;
+  font-size: 17px;
 }
 .ui-datepicker-title {
   text-align: center;
@@ -555,56 +555,56 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 }
 .ui-datepicker-calendar tbody tr:nth-child(2) td:nth-child(6) a {
   color: #000;
-  background: rgba(92,197,208,30%);
+  background: rgba(92, 197, 208, 30%);
   display: inline-flex;
   border-radius: 80px;
   border: 1px solid #5cc5d0;
 }
 .ui-datepicker-calendar tbody tr:nth-child(3) td:nth-child(1) a {
   color: #000;
-  background: rgba(92,197,208,30%);
+  background: rgba(92, 197, 208, 30%);
   display: inline-flex;
   border-radius: 80px;
   border: 1px solid #5cc5d0;
 }
 .ui-datepicker-calendar tbody tr:nth-child(3) td:nth-child(5) a {
   color: #000;
-  background: rgba(92,197,208,30%);
+  background: rgba(92, 197, 208, 30%);
   display: inline-flex;
   border-radius: 80px;
   border: 1px solid #5cc5d0;
 }
 .ui-datepicker-calendar tbody tr:nth-child(3) td:nth-child(6) a {
   color: #000;
-  background: rgba(92,197,208,30%);
+  background: rgba(92, 197, 208, 30%);
   display: inline-flex;
   border-radius: 80px;
   border: 1px solid #5cc5d0;
 }
 .ui-datepicker-calendar tbody tr:nth-child(3) td:nth-child(7) a {
   color: #000;
-  background: rgba(92,197,208,30%);
+  background: rgba(92, 197, 208, 30%);
   display: inline-flex;
   border-radius: 80px;
   border: 1px solid #5cc5d0;
 }
 .ui-datepicker-calendar tbody tr:nth-child(4) td:nth-child(4) a {
   color: #000;
-  background: rgba(92,197,208,30%);
+  background: rgba(92, 197, 208, 30%);
   display: inline-flex;
   border-radius: 80px;
   border: 1px solid #5cc5d0;
 }
 .ui-datepicker-calendar tbody tr:nth-child(5) td:nth-child(1) a {
   color: #000;
-  background: rgba(92,197,208,30%);
+  background: rgba(92, 197, 208, 30%);
   display: inline-flex;
   border-radius: 80px;
   border: 1px solid #5cc5d0;
 }
 .ui-datepicker-calendar tbody tr:nth-child(5) td:nth-child(5) a {
   color: #000;
-  background: rgba(92,197,208,30%);
+  background: rgba(92, 197, 208, 30%);
   display: inline-flex;
   border-radius: 80px;
   border: 1px solid #5cc5d0;
@@ -616,7 +616,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 }
 .ui-datepicker-year {
   font-size: 12px;
-    color: #8F9BB3;
+  color: #8f9bb3;
 }
 .ui-datepicker-calendar tr {
   margin-bottom: 15px;
@@ -728,7 +728,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 .content {
   width: 55%;
   margin: 0 auto;
-  margin-top: 135px;
+  margin-top: 153px;
 }
 .dashboard-heading {
   margin-bottom: 10px;
