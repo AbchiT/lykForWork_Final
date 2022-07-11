@@ -688,7 +688,7 @@
           <h3>Preview</h3>
           <div class="preview-wrap">
             <div class="preview-ban">
-              <img src="assets/img/add-event.png" />
+              <img src="assets/img/add-event.png" id="previewbanner"/>
             </div>
             <h2>D&J Conference</h2>
             <p class="preview-detail">
@@ -810,7 +810,41 @@
         </div>
         <h3>Today's Meetings</h3>
         <div class="today-meet-box">
-          <p>No Meeting schedule</p>
+          <p class="t-day-dash">
+            <span class="todeysmeet-p-left"
+              >11:00 AM <br />
+              Task Management</span
+            >
+            <span class="todeysmeet-p-right"><a href="#">Join</a></span>
+          </p>
+          <p class="t-day-dash">
+            <span class="todeysmeet-p-left"
+              >11:00 AM <br />
+              Task Management</span
+            >
+            <span class="todeysmeet-p-right"><a href="#">Join</a></span>
+          </p>
+          <p class="t-day-dash">
+            <span class="todeysmeet-p-left"
+              >11:00 AM <br />
+              Task Management</span
+            >
+            <span class="todeysmeet-p-right"><a href="#">Join</a></span>
+          </p>
+          <p class="t-day-dash">
+            <span class="todeysmeet-p-left"
+              >11:00 AM <br />
+              Task Management</span
+            >
+            <span class="todeysmeet-p-right"><a href="#">Join</a></span>
+          </p>
+          <p class="t-day-dash">
+            <span class="todeysmeet-p-left"
+              >11:00 AM <br />
+              Task Management</span
+            >
+            <span class="todeysmeet-p-right"><a href="#">Join</a></span>
+          </p>
         </div>
       </div>
     </section>
@@ -910,6 +944,8 @@ $(".picbg").toggleClass("d-show");
           // you can use this method to get file and perform respective operations
           let files = Array.from(input.files);
           console.log(files);
+          var x = URL.createObjectURL(event.target.files[0]);
+          $("#previewbanner").attr("src", x);
         };
         input.click();
       }
