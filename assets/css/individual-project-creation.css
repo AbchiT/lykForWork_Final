@@ -1,4 +1,7 @@
 /*individual-project-creation css*/
+.individual-project-creation {
+    margin-top: 100px;
+}
 
 .individual-project-creation .row-all-between{
 	display: flex;
@@ -42,7 +45,7 @@
 }
 
 .individual-project-creation .form-control2{
-	width: 94%;
+	width: 93%;
 	padding: 10px;
 	margin: 10px;
 	border-radius: 5px;
@@ -110,8 +113,8 @@
     transform: translate(-50%, -50%);
     background-color: #fff;
     padding: 1rem 1.5rem;
-    width: 42rem;
-    height: 27rem;
+    width: 35rem;
+    height: 28rem;
     border-radius: 0.5rem;
 }
 
@@ -163,6 +166,11 @@
     overflow: hidden;
     margin-right: 6px;
     color: #3ab7bb;
+}
+
+.individual-project-creation .my-team-add-btn-dashboard {
+    display: flex;
+    margin-bottom: 25px;
 }
 
 .individual-project-creation .project_btn_1{
@@ -219,7 +227,7 @@
 }
 
 .individual-project-creation .add_task_btn {
-    width: 94%;
+    width: 93%;
 }
 
 .individual-project-creation .modal-content {

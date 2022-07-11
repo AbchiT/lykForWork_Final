@@ -36,7 +36,7 @@ $(function () {
   $("#calendar,#meetCalendar,#meetCalendarweek").datepicker({
     dateFormat: "dd/mm/yy",
     dayNames: [
-      "Sunday",
+//      "Sunday",
       "Monday",
       "Tuesday",
       "Wednesday",
@@ -45,8 +45,8 @@ $(function () {
       "Saturday",
       "Sunday",
     ],
-    dayNamesMin: ["S", "M", "T", "W", "T", "F", "S", "S"],
-    dayNamesShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    dayNamesMin: [ "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    dayNamesShort: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
     monthNames: [
       "January",
       "February",
