@@ -31,11 +31,15 @@
     <div id="cam-bg" class="modal-cam-bg">
       <div class="moda-cam-body">
         <div class="video-bg">
-
           <video height="340" id="video" autoplay></video>
         </div>
-<button id="click-photo">Click Photo</button>
-<canvas id="canvas" width="320" height="240" style="display: none;"></canvas>
+        <button id="click-photo">Click Photo</button>
+        <canvas
+          id="canvas"
+          width="320"
+          height="240"
+          style="display: none"
+        ></canvas>
       </div>
     </div>
     <section>
@@ -166,11 +170,11 @@
     <section>
       <div class="bg-all"></div>
     </section>
-    
+
     <section class="nav-left">
       <div class="nav">
         <ul class="nav-ul">
-        <div class="profile-images-card row-align-center">
+          <div class="profile-images-card row-align-center">
             <div class="profile-images">
               <img src="assets/img/company-profile.jpg" id="upload-img" />
               <div class="custom-file">
@@ -179,23 +183,56 @@
             </div>
             <div class="picbg">
               <div class="takephotos">
-           <div class="upload-box">
-            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="21" cy="21" r="21" fill="#F5F6F8"/>
-<path d="M32.776 14.8299H29.563V11.6426C29.563 11.2828 29.2803 11 28.9204 11H9.64259C9.28275 11 9 11.2828 9 11.6426V27.5018C9 27.8617 9.28275 28.1444 9.64259 28.1444H12.8556V31.3574C12.8556 31.7172 13.1383 32 13.4982 32H32.776C33.1359 32 33.4186 31.7172 33.4186 31.3574V15.4725C33.4186 15.1383 33.1359 14.8299 32.776 14.8299V14.8299ZM32.1334 27.2448L29.3317 24.1604C28.7148 23.4664 27.5067 23.4664 26.8899 24.1604L25.5276 25.6513L21.4149 20.9475C21.0807 20.562 20.5923 20.3563 20.0783 20.3563C19.5643 20.3563 19.0758 20.5876 18.7416 20.9733L14.115 26.2682L14.1151 16.1152H32.1078V27.245L32.1334 27.2448ZM10.2852 26.8592V12.2851H28.3035V14.8555H13.4982C13.1383 14.8555 12.8556 15.1383 12.8556 15.4981V26.8592H10.2852ZM14.1408 30.6891V28.1958L19.7185 21.7956C19.847 21.6414 20.0269 21.6414 20.0783 21.6414C20.1554 21.6414 20.3354 21.667 20.4382 21.7956L25.0134 27.0392C25.142 27.1677 25.2962 27.2704 25.5019 27.2704C25.7075 27.2961 25.8617 27.1933 25.9903 27.0648L27.841 25.0343C27.9437 24.9315 28.0466 24.9057 28.1237 24.9057C28.2008 24.9057 28.3037 24.9314 28.4065 25.0343L32.1593 29.147V30.7149H14.1409L14.1408 30.6891Z" fill="#2E2E2E"/>
-<path d="M29.8457 19.945C29.8457 20.7968 29.1552 21.4873 28.3034 21.4873C27.4517 21.4873 26.7612 20.7968 26.7612 19.945C26.7612 19.0933 27.4517 18.4028 28.3034 18.4028C29.1552 18.4028 29.8457 19.0933 29.8457 19.945" fill="#2E2E2E"/>
-</svg>
+                <div class="upload-box">
+                  <svg
+                    width="42"
+                    height="42"
+                    viewBox="0 0 42 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="21" cy="21" r="21" fill="#F5F6F8" />
+                    <path
+                      d="M32.776 14.8299H29.563V11.6426C29.563 11.2828 29.2803 11 28.9204 11H9.64259C9.28275 11 9 11.2828 9 11.6426V27.5018C9 27.8617 9.28275 28.1444 9.64259 28.1444H12.8556V31.3574C12.8556 31.7172 13.1383 32 13.4982 32H32.776C33.1359 32 33.4186 31.7172 33.4186 31.3574V15.4725C33.4186 15.1383 33.1359 14.8299 32.776 14.8299V14.8299ZM32.1334 27.2448L29.3317 24.1604C28.7148 23.4664 27.5067 23.4664 26.8899 24.1604L25.5276 25.6513L21.4149 20.9475C21.0807 20.562 20.5923 20.3563 20.0783 20.3563C19.5643 20.3563 19.0758 20.5876 18.7416 20.9733L14.115 26.2682L14.1151 16.1152H32.1078V27.245L32.1334 27.2448ZM10.2852 26.8592V12.2851H28.3035V14.8555H13.4982C13.1383 14.8555 12.8556 15.1383 12.8556 15.4981V26.8592H10.2852ZM14.1408 30.6891V28.1958L19.7185 21.7956C19.847 21.6414 20.0269 21.6414 20.0783 21.6414C20.1554 21.6414 20.3354 21.667 20.4382 21.7956L25.0134 27.0392C25.142 27.1677 25.2962 27.2704 25.5019 27.2704C25.7075 27.2961 25.8617 27.1933 25.9903 27.0648L27.841 25.0343C27.9437 24.9315 28.0466 24.9057 28.1237 24.9057C28.2008 24.9057 28.3037 24.9314 28.4065 25.0343L32.1593 29.147V30.7149H14.1409L14.1408 30.6891Z"
+                      fill="#2E2E2E"
+                    />
+                    <path
+                      d="M29.8457 19.945C29.8457 20.7968 29.1552 21.4873 28.3034 21.4873C27.4517 21.4873 26.7612 20.7968 26.7612 19.945C26.7612 19.0933 27.4517 18.4028 28.3034 18.4028C29.1552 18.4028 29.8457 19.0933 29.8457 19.945"
+                      fill="#2E2E2E"
+                    />
+                  </svg>
 
- <button type="button" id="btnActivateCamera">Take Photos</button>
-           </div>     
-   <div class="upload-box"><svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="21" cy="21" r="21" fill="#F5F6F8"/>
-<path d="M35.4657 16.4288L35.4866 16.4224L35.5061 16.4125C35.7863 16.2702 36.1039 16.2877 36.3508 16.4129C36.5974 16.5381 36.75 16.7558 36.75 17.0052V26.9978C36.75 27.2452 36.5979 27.4623 36.351 27.5873C36.1039 27.7124 35.7863 27.7298 35.5061 27.5875L35.4866 27.5776L35.4657 27.5712L31.18 26.265L30.8571 26.1666V26.5041V29.1157C30.8571 29.9877 30.0393 30.75 28.9643 30.75H9.14286C8.06784 30.75 7.25 29.9877 7.25 29.1157V13.8843C7.25 13.0123 8.06784 12.25 9.14286 12.25H28.9643C30.0393 12.25 30.8571 13.0123 30.8571 13.8843V17.4959V17.8334L31.18 17.735L35.4657 16.4288ZM28.6964 29.1302H28.9464V28.8802V14.1198V13.8698H28.6964H9.41071H9.16071V14.1198V28.8802V29.1302H9.41071H28.6964ZM34.5269 25.2054L34.8393 25.2859V24.9633V19.0367V18.7138L34.5267 18.7946L31.0446 19.6946L30.8571 19.743V19.9366V24.0663V24.2601L31.0448 24.3084L34.5269 25.2054ZM15.5714 18.6384H11.8214C11.8136 18.6384 11.8077 18.6368 11.8036 18.6351V17.2574C11.8077 17.2557 11.8136 17.2541 11.8214 17.2541H15.5714C15.5793 17.2541 15.5852 17.2557 15.5893 17.2574V18.6351C15.5852 18.6368 15.5793 18.6384 15.5714 18.6384ZM15.5718 21.2296H11.8218C11.814 21.2296 11.808 21.2281 11.8039 21.2263V19.8487C11.808 19.8469 11.814 19.8453 11.8218 19.8453H15.5718C15.5796 19.8453 15.5856 19.8469 15.5897 19.8487V21.2263C15.5856 21.2281 15.5796 21.2296 15.5718 21.2296Z" fill="#2E2E2E" stroke="white" stroke-width="0.5"/>
-</svg>
+                  <button type="button" id="btnActivateCamera">
+                    Take Photos
+                  </button>
+                </div>
+                <div class="upload-box">
+                  <svg
+                    width="42"
+                    height="42"
+                    viewBox="0 0 42 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="21" cy="21" r="21" fill="#F5F6F8" />
+                    <path
+                      d="M35.4657 16.4288L35.4866 16.4224L35.5061 16.4125C35.7863 16.2702 36.1039 16.2877 36.3508 16.4129C36.5974 16.5381 36.75 16.7558 36.75 17.0052V26.9978C36.75 27.2452 36.5979 27.4623 36.351 27.5873C36.1039 27.7124 35.7863 27.7298 35.5061 27.5875L35.4866 27.5776L35.4657 27.5712L31.18 26.265L30.8571 26.1666V26.5041V29.1157C30.8571 29.9877 30.0393 30.75 28.9643 30.75H9.14286C8.06784 30.75 7.25 29.9877 7.25 29.1157V13.8843C7.25 13.0123 8.06784 12.25 9.14286 12.25H28.9643C30.0393 12.25 30.8571 13.0123 30.8571 13.8843V17.4959V17.8334L31.18 17.735L35.4657 16.4288ZM28.6964 29.1302H28.9464V28.8802V14.1198V13.8698H28.6964H9.41071H9.16071V14.1198V28.8802V29.1302H9.41071H28.6964ZM34.5269 25.2054L34.8393 25.2859V24.9633V19.0367V18.7138L34.5267 18.7946L31.0446 19.6946L30.8571 19.743V19.9366V24.0663V24.2601L31.0448 24.3084L34.5269 25.2054ZM15.5714 18.6384H11.8214C11.8136 18.6384 11.8077 18.6368 11.8036 18.6351V17.2574C11.8077 17.2557 11.8136 17.2541 11.8214 17.2541H15.5714C15.5793 17.2541 15.5852 17.2557 15.5893 17.2574V18.6351C15.5852 18.6368 15.5793 18.6384 15.5714 18.6384ZM15.5718 21.2296H11.8218C11.814 21.2296 11.808 21.2281 11.8039 21.2263V19.8487C11.808 19.8469 11.814 19.8453 11.8218 19.8453H15.5718C15.5796 19.8453 15.5856 19.8469 15.5897 19.8487V21.2263C15.5856 21.2281 15.5796 21.2296 15.5718 21.2296Z"
+                      fill="#2E2E2E"
+                      stroke="white"
+                      stroke-width="0.5"
+                    />
+                  </svg>
 
-<label for="fileupload" id="btnCapture" class="d-none">Upload Photo</label>
-<input type="file" id="fileupload" accept="image/*" style="display: none;">
-</div> 
+                  <label for="fileupload" id="btnCapture" class="d-none"
+                    >Upload Photo</label
+                  >
+                  <input
+                    type="file"
+                    id="fileupload"
+                    accept="image/*"
+                    style="display: none"
+                  />
+                </div>
               </div>
             </div>
             <div class="profile-right">
@@ -400,8 +437,8 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M2.65485 2.32448L2.65488 2.32449L2.65528 2.32297C3.01444 0.976851 4.17653 0.05 5.49653 0.05H15.5035C16.1463 0.050067 16.7718 0.271771 17.2847 0.681859C17.7977 1.09199 18.1701 1.66816 18.3447 2.32296L18.3447 2.32297L18.3451 2.32448L20.8352 10.6059C20.8353 10.6061 20.8353 10.6064 20.8354 10.6066C20.9638 11.0891 20.9846 11.5965 20.8962 12.0889C20.8077 12.5816 20.6123 13.0458 20.3254 13.4451C20.0386 13.8443 19.6681 14.1678 19.2433 14.3902C18.8186 14.6127 18.3509 14.7282 17.877 14.7278H17.8769H3.12307H3.12303C2.64911 14.7282 2.18143 14.6127 1.75665 14.3902C1.33187 14.1678 0.961436 13.8443 0.674584 13.4451C0.387725 13.0458 0.192297 12.5816 0.103806 12.0889C0.0153609 11.5965 0.0361779 11.0891 0.1646 10.6067L2.65485 2.32448ZM3.12307 14.7778H17.8769L0.116488 10.593C-0.0140059 11.0828 -0.0351915 11.5979 0.0545936 12.0978C0.144379 12.5977 0.342692 13.0688 0.633978 13.4742C0.925263 13.8797 1.3016 14.2084 1.73346 14.4345C2.16532 14.6607 2.64096 14.7782 3.12307 14.7778ZM4.55877 1.86585C4.29011 2.08078 4.09563 2.3819 4.00425 2.72325L4.00387 2.72319L1.51339 11.0077L1.51336 11.0077L1.51295 11.0093C1.44341 11.2706 1.43217 11.5453 1.48008 11.8119C1.528 12.0785 1.63379 12.33 1.78936 12.5466C1.94493 12.7632 2.1461 12.9391 2.37725 13.0602C2.60842 13.1814 2.86319 13.2445 3.12157 13.2444H17.8784C18.1368 13.2445 18.3916 13.1814 18.6227 13.0602C18.8539 12.9391 19.0551 12.7632 19.2106 12.5466C19.3662 12.33 19.472 12.0785 19.5199 11.8119C19.5678 11.5453 19.5566 11.2706 19.4871 11.0093L19.4871 11.0092L19.4866 11.0077L16.9966 2.72633C16.9965 2.72606 16.9964 2.7258 16.9964 2.72553C16.9052 2.38324 16.7105 2.08126 16.4412 1.86585C16.1717 1.65023 15.8424 1.53328 15.5035 1.53333H5.49654C5.15761 1.53328 4.82828 1.65023 4.55877 1.86585ZM4.75034 17.6829C4.88188 17.5441 5.05969 17.4667 5.24448 17.4667H15.754C15.9388 17.4667 16.1166 17.5441 16.2482 17.6829C16.3798 17.8218 16.4542 18.0108 16.4542 18.2083C16.4542 18.4059 16.3798 18.5948 16.2482 18.7337C16.1166 18.8726 15.9388 18.95 15.754 18.95H5.24448C5.05969 18.95 4.88188 18.8726 4.75034 18.7337C4.61872 18.5948 4.54434 18.4059 4.54434 18.2083C4.54434 18.0108 4.61872 17.8218 4.75034 17.6829Z"
-                    fill="#2E2E2E"
+                    d="M2.65485 2.32448L2.65488 2.32449L2.65528 2.32297C3.01444 0.976851 4.17653 0.05 5.49653 0.05H15.5035C16.1463 0.050067 16.7718 0.271771 17.2847 0.681859C17.7977 1.09199 18.1701 1.66816 18.3447 2.32296L18.3447 2.32297L18.3451 2.32448L20.8352 10.6059C20.8353 10.6061 20.8353 10.6064 20.8354 10.6066C20.9638 11.0891 20.9846 11.5965 20.8962 12.0889C20.8077 12.5816 20.6123 13.0458 20.3254 13.4451C20.0386 13.8443 19.6681 14.1678 19.2433 14.3902C18.8186 14.6127 18.3509 14.7282 17.877 14.7278H17.8769H3.12307H3.12303C2.64911 14.7282 2.18143 14.6127 1.75665 14.3902C1.33187 14.1678 0.961436 13.8443 0.674584 13.4451C0.387725 13.0458 0.192297 12.5816 0.103806 12.0889C0.0153609 11.5965 0.036178 11.0891 0.1646 10.6067L2.65485 2.32448ZM3.12307 14.7778H17.8769L0.116488 10.593C-0.0140059 11.0828 -0.0351915 11.5979 0.0545936 12.0978C0.144379 12.5977 0.342692 13.0688 0.633978 13.4742C0.925263 13.8797 1.3016 14.2084 1.73346 14.4345C2.16532 14.6607 2.64096 14.7782 3.12307 14.7778ZM4.55877 1.86585C4.29011 2.08078 4.09563 2.3819 4.00425 2.72325L4.00387 2.72319L1.51339 11.0077L1.51336 11.0077L1.51295 11.0093C1.44341 11.2706 1.43217 11.5453 1.48008 11.8119C1.528 12.0785 1.63379 12.33 1.78936 12.5466C1.94493 12.7632 2.1461 12.9391 2.37725 13.0602C2.60842 13.1814 2.86319 13.2445 3.12157 13.2444H17.8784C18.1368 13.2445 18.3916 13.1814 18.6227 13.0602C18.8539 12.9391 19.0551 12.7632 19.2106 12.5466C19.3662 12.33 19.472 12.0785 19.5199 11.8119C19.5678 11.5453 19.5566 11.2706 19.4871 11.0093L19.4871 11.0092L19.4866 11.0077L16.9966 2.72633C16.9965 2.72606 16.9964 2.7258 16.9964 2.72553C16.9052 2.38324 16.7105 2.08126 16.4412 1.86585C16.1717 1.65023 15.8424 1.53328 15.5035 1.53333H5.49654C5.15761 1.53328 4.82828 1.65023 4.55877 1.86585ZM4.75034 17.6829C4.88188 17.5441 5.05969 17.4667 5.24448 17.4667H15.754C15.9388 17.4667 16.1166 17.5441 16.2482 17.6829C16.3798 17.8218 16.4542 18.0108 16.4542 18.2083C16.4542 18.4059 16.3798 18.5948 16.2482 18.7337C16.1166 18.8726 15.9388 18.95 15.754 18.95H5.24448C5.05969 18.95 4.88188 18.8726 4.75034 18.7337C4.61872 18.5948 4.54434 18.4059 4.54434 18.2083C4.54434 18.0108 4.61872 17.8218 4.75034 17.6829Z"
+                    fill="#5CC5D0"
                     stroke="white"
                     stroke-width="0.1"
                   />
@@ -658,12 +695,26 @@
           </div>
         </div>
       </div>
-      <div class="meeting-schedule row-align-center">
-        <div class="meeting-schedule-left">
+      <div class="meeting-schedule">
+        <!-- <div class="meeting-schedule-left">
           <p>No Meeting Schedule</p>
-        </div>
+        </div> -->
         <div class="meeting-schedule-right">
-          <a href="offline_meeting.html">Meeting Schedule</a>
+          <a href="offline_meeting.html"
+            ><svg
+              width="10"
+              height="11"
+              viewBox="0 0 10 11"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.203947 6.06668H4.07895V10.1834C4.07895 10.3025 4.17072 10.4 4.28289 10.4H5.50658C5.61875 10.4 5.71053 10.3025 5.71053 10.1834V6.06668H9.58553C9.6977 6.06668 9.78947 5.96918 9.78947 5.85001V4.55001C9.78947 4.43084 9.6977 4.33334 9.58553 4.33334H5.71053V0.216667C5.71053 0.0975002 5.61875 0 5.50658 0H4.28289C4.17072 0 4.07895 0.0975002 4.07895 0.216667V4.33334H0.203947C0.0917763 4.33334 0 4.43084 0 4.55001V5.85001C0 5.96918 0.0917763 6.06668 0.203947 6.06668Z"
+                fill="white"
+              />
+            </svg>
+            Create Offline Meeting</a
+          >
         </div>
       </div>
     </section>
@@ -697,83 +748,84 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-<script>
-          
-          $(function () {
+    <script>
+      $(function () {
         $("#fileupload").change(function (event) {
           var x = URL.createObjectURL(event.target.files[0]);
           $("#upload-img").attr("src", x);
           $(".bg-all").toggleClass("opacitybg");
-  $("body").toggleClass("opacitybgnav");
-  $(".picbg").toggleClass("d-show");
+          $("body").toggleClass("opacitybgnav");
+          $(".picbg").toggleClass("d-show");
         });
       });
 
       var videoCapture;
       let video = document.querySelector("#video");
-let click_button = document.querySelector("#click-photo");
-let canvas = document.querySelector("#canvas");
-const cameraPopup = document.getElementById("cam-bg");
+      let click_button = document.querySelector("#click-photo");
+      let canvas = document.querySelector("#canvas");
+      const cameraPopup = document.getElementById("cam-bg");
       $(document).ready(function () {
-        videoCapture = document.getElementById('capturevideo');
+        videoCapture = document.getElementById("capturevideo");
       });
-      $(document).on('click', '#btnActivateCamera',async function () {
-    
-    cameraPopup.style.display = "flex";
+      $(document).on("click", "#btnActivateCamera", async function () {
+        cameraPopup.style.display = "flex";
 
         // access video stream from webcam
-        
-let stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
-	video.srcObject = stream;
-  window.localStream = stream;
+
+        let stream = await navigator.mediaDevices.getUserMedia({
+          video: true,
+          audio: false,
+        });
+        video.srcObject = stream;
+        window.localStream = stream;
         // navigator.mediaDevices.getUserMedia({ video: true }).then(function (stream) {
-        //     // on success, stream it in video tag 
+        //     // on success, stream it in video tag
         //     window.localStream = stream;
         //     videoCapture.srcObject = stream;
         //     videoCapture.play();
         //     activateCamera();
         // }).catch(e => {
         //   console.log(e);
-        //     // on failure/error, alert message. 
+        //     // on failure/error, alert message.
         //     alert("Please Allow: Use Your Camera!");
         // });
-    
       });
-      $(document).on('click', '#btnDeactivateCamera', function () {
-    // stop video streaming if any
-    localStream.getTracks().forEach(function (track) {
-        if (track.readyState == 'live' && track.kind === 'video') {
+      $(document).on("click", "#btnDeactivateCamera", function () {
+        // stop video streaming if any
+        localStream.getTracks().forEach(function (track) {
+          if (track.readyState == "live" && track.kind === "video") {
             track.stop();
             deactivateCamera();
-        }
-    });
-});
-$(document).on('click', '#click-photo', function () {
-  var img = document.getElementById("upload-img");
+          }
+        });
+      });
+      $(document).on("click", "#click-photo", function () {
+        var img = document.getElementById("upload-img");
 
-canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+        canvas
+          .getContext("2d")
+          .drawImage(video, 0, 0, canvas.width, canvas.height);
 
-img.src = canvas.toDataURL();
-cameraPopup.style.display = "none";
-$(".picbg").toggleClass("d-show");
-  $(".bg-all").toggleClass("opacitybg");
-  $("body").toggleClass("opacitybgnav");
-  localStream.getTracks().forEach(function (track) {
-        if (track.readyState == 'live' && track.kind === 'video') {
+        img.src = canvas.toDataURL();
+        cameraPopup.style.display = "none";
+        $(".picbg").toggleClass("d-show");
+        $(".bg-all").toggleClass("opacitybg");
+        $("body").toggleClass("opacitybgnav");
+        localStream.getTracks().forEach(function (track) {
+          if (track.readyState == "live" && track.kind === "video") {
             track.stop();
-            
-        }
-    });
-});
-$(document).ready(function(){
-  $(".custom-file").click(function(){
-    $(".picbg").toggleClass("d-show");
-  });
-});
-$(".custom-file").click(function () {
-  $(".bg-all").toggleClass("opacitybg");
-  $("body").toggleClass("opacitybgnav");
-});
+          }
+        });
+      });
+      $(document).ready(function () {
+        $(".custom-file").click(function () {
+          $(".picbg").toggleClass("d-show");
+        });
+      });
+      $(".custom-file").click(function () {
+        $(".bg-all").toggleClass("opacitybg");
+        $("body").toggleClass("opacitybgnav");
+      });
     </script>
     <script src="assets/js/main.js"></script>
   </body>
