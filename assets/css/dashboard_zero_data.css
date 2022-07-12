@@ -28,7 +28,7 @@
   width: 30%;
   text-align: center;
   background: #fff;
-  padding: 52px 0;
+  padding: 47px 0;
   border-radius: 10px;
 }
 .projects-right a {
@@ -211,4 +211,18 @@
   .projects-right {
     width: 100%;
   }
+}
+.projects-left h3 {
+  font-size: 18px;
+  color: #2e2e2e;
+}
+.projects-left p {
+  font-size: 14px;
+  color: #2e2e2e;
+}
+.projects-right p {
+  font-size: 14px;
+}
+.projects-right svg {
+  margin-bottom: 15px;
 }
