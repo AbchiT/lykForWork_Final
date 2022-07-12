@@ -87,7 +87,12 @@ ion-icon {
   padding: 1px 8px;
   border-radius: 20px;
 }
-
+.project-heading h3 {
+    color: #2E2E2E;
+}
+.arrow-icon {
+    display: block !important;
+}
 @media only screen and (max-width: 1300px) {
   .arrow-icon {
     top: 160px;
@@ -388,7 +393,7 @@ ion-icon.md.hydrated {
 
 .nav {
   position: relative;
-  height: 88vh;
+  height: 86vh;
   border-radius: 0 30px 30px 0;
   overflow-x: hidden;
   transition: 0.5s;
@@ -453,6 +458,7 @@ ion-icon.md.hydrated {
   display: block;
   padding-left: 10px;
   white-space: nowrap;
+	font-size: 14px;
 }
 .nav ul.nav-ul li.active-nav a {
   color: #5cc5d0;
@@ -462,12 +468,28 @@ ion-icon.md.hydrated {
 .nav ul.nav-ul li.active-nav a span svg path,
 .nav ul.nav-ul li.active-nav a span svg line {
   stroke: #5cc5d0;
+	
+}
+.nav ul.nav-ul li.active-nav:nth-child(4) svg path {
+  fill: #5cc5d0;
 }
 .nav ul.nav-ul li.active-nav:nth-child(5) svg path {
+  fill: #5cc5d005;
+    stroke: #5cc5d0;
+}
+.nav ul.nav-ul li.active-nav:nth-child(6) svg path {
   fill: #5cc5d0;
 }
 .nav ul.nav-ul li.active-nav:nth-child(7) svg path {
-  fill: #5cc5d0;
+   stroke: #5cc5d0;
+}
+.nav ul.nav-ul li.active-nav:nth-child(8) svg path {
+    stroke: #5cc5d0;
+    fill: #5cc5d0;
+}
+.nav ul.nav-ul li.active-nav:nth-child(9) svg path {
+    stroke: #5cc5d0;
+    fill: #5cc5d0;
 }
 .nav ul.nav-ul li.active-nav:nth-child(10) svg path {
   fill: #5cc5d0;
@@ -476,11 +498,16 @@ ion-icon.md.hydrated {
   fill: #5cc5d0;
 }
 .nav ul.nav-ul li.active-nav:nth-child(12) svg path {
-  fill: #5cc5d0;
+   stroke: #5cc5d0;
+    fill: #5cc5d0;
 }
 .nav ul.nav-ul li.active-nav:nth-child(13) svg path {
   fill: #5cc5d0;
 }
+.nav ul.nav-ul li.active-nav:nth-child(14) svg path {
+  fill: #5cc5d0;
+}
+
 .last-two-nav {
   margin-top: 30%;
 }
@@ -658,6 +685,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 }
 .right-side h3 {
   margin: 10px 0;
+	font-size: 18px;
 }
 .trending-feed-box {
   height: 150px;
@@ -851,7 +879,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 }
 .right-side-wrap {
   position: relative;
-  height: 88vh;
+  height: 85vh;
   overflow-x: hidden;
 }
 .right-side .ui-datepicker-calendar tr td a {
