@@ -25,8 +25,166 @@
     <link rel="manifest" href="assets/icon/site.webmanifest" />
     <link rel="stylesheet" href="assets/css/notes-zero-data.css">
     <link rel="stylesheet" href="assets/css/notes-data.css">
+	   <link rel="stylesheet" href="assets/css/feed.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>LykForWork</title>
+	  
+	   <style>
+		   .notes-p-toggle input[type="checkbox"], .dropdown-content, .notes-p-toggle input[type="radio"] {
+    display: none;
+}
+		   .notes-p-toggle input[type="radio"]:checked + label:after {
+    right: 10px;
+    background: #5cc5d0;
+    border: 3.5px solid #fff;
+    -webkit-box-shadow: 0px 0px 0px 2px #5cc5d0;
+    box-shadow: 0px 0px 0px 2px #5cc5d0;
+}
+		   .notes-p-toggle input[type="radio"] + label:after {
+    right: 10px;
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #dcdbe505;
+    border: 1px solid #838383;
+}
+		   .notes-p-toggle li input[type="radio"]:checked + label {
+    background-color: rgba(92,197,208,20%);
+    padding: 5px 2px;
+    width: 100%;
+    overflow: hidden;
+}
+		.notes-p-toggle input[type="radio"] + label {
+    cursor: pointer;
+        padding: 5px 2px;
+    position: relative;
+   justify-content: flex-start;
+}   
+		   .notes-p-toggle input[type="radio"]:checked + label:before{
+			   display: none;
+		   }
+		   .notes-p-toggle input[type="radio"] + label:before{
+			   display: none;
+		   }
+		   .notes-p-toggle .icon-wrapper li {
+    border-bottom: 1px solid #dcdbe5;
+    padding: 0px;
+    max-height: max-content;
+     margin-top: 0px; 
+    color: #2f255b;
+}
+		   
+		   .notes-p-toggle .dropdown-content {
+    border-radius: 15px;
+    position: absolute;
+    border: 1px solid #b3b3bf;
+     padding: 0px; 
+    left: 0px;
+    top: 30px;
+    width: 180px;
+    overflow: hidden;
+    z-index: 30;
+}
+      form {
+        max-width: 250px;
+        position: relative;
+        margin: 0px auto 0;
+        font-size: 15px;
+      }
+      .radiobtn {
+        position: relative;
+        display: block;
+      }
+      .radiobtn label {
+        display: block;
+        background: #fee8c3;
+        color: #444;
+        border-radius: 5px;
+        padding: 10px 20px;
+        border: 2px solid #fdd591;
+        margin-bottom: 5px;
+        cursor: pointer;
+      }
+      .radiobtn label:after,
+      .radiobtn label:before {
+        content: "";
+        position: absolute;
+        right: 11px;
+        top: 11px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: #fdcb77;
+      }
+      .radiobtn label:before {
+        background: transparent;
+        transition: 0.1s width cubic-bezier(0.075, 0.82, 0.165, 1) 0s,
+          0.3s height cubic-bezier(0.075, 0.82, 0.165, 2) 0.1s;
+        z-index: 2;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: 13px;
+        background-position: center;
+        width: 0;
+        height: 0;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNS4zIDEzLjIiPiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE0LjcuOGwtLjQtLjRhMS43IDEuNyAwIDAgMC0yLjMuMUw1LjIgOC4yIDMgNi40YTEuNyAxLjcgMCAwIDAtMi4zLjFMLjQgN2ExLjcgMS43IDAgMCAwIC4xIDIuM2wzLjggMy41YTEuNyAxLjcgMCAwIDAgMi40LS4xTDE1IDMuMWExLjcgMS43IDAgMCAwLS4yLTIuM3oiIGRhdGEtbmFtZT0iUGZhZCA0Ii8+PC9zdmc+);
+      }
+      .radiobtn input[type="radio"] {
+        display: none;
+        position: absolute;
+        width: 100%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+      .radiobtn input[type="radio"]:checked + label {
+        background: #fdcb77;
+        animation-name: blink;
+        animation-duration: 1s;
+        border-color: #fcae2c;
+      }
+      .radiobtn input[type="radio"]:checked + label:after {
+        background: #fcae2c;
+      }
+      .radiobtn input[type="radio"]:checked + label:before {
+        width: 20px;
+        height: 20px;
+      }
+/*
+      @keyframes blink {
+        0% {
+          background-color: #fdcb77;
+        }
+        10% {
+          background-color: #fdcb77;
+        }
+        11% {
+          background-color: #fdd591;
+        }
+        29% {
+          background-color: #fdd591;
+        }
+        30% {
+          background-color: #fdcb77;
+        }
+        50% {
+          background-color: #fdd591;
+        }
+        45% {
+          background-color: #fdcb77;
+        }
+        50% {
+          background-color: #fdd591;
+        }
+        100% {
+          background-color: #fdcb77;
+        }
+      }
+*/
+    </style>
+	  
   </head>
   <body class="dashboard">
     <div id="cam-bg" class="modal-cam-bg">
@@ -653,24 +811,20 @@
 </svg>
 </i>
               <div class="dropdown-content">
-                <ul>
-                  <li>
-                    <input type="radio" checked name="test" id="1" /><label
-                      for="1"
-                      class="row-align-center public-private-label"
-                      >Private
-                      <img src="assets/img/feed-img/private.svg" alt=""
-                    /></label>
-                  </li>
-                  <li>
-                    <input type="radio" name="test" id="2" /><label
-                      for="2"
-                      class="row-align-center public-private-label"
-                      >Public<img src="assets/img/feed-img/public.svg" alt=""
-                    /></label>
-                  </li>
-                </ul>
-              </div>
+                  <ul>
+                    <li>
+                      <input type="radio" name="test" id="1" />
+						
+						<label for="1" class="public-private-label">
+                        <img src="assets/img/feed-img/private.svg" alt="">
+                        Private</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="test" id="2" />
+						<label for="2" class="public-private-label"><img src="assets/img/feed-img/public.svg" alt="">Public</label>
+                    </li>
+                  </ul>
+                </div>
             </div>
                           </div>
                         </div>
