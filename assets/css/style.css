@@ -88,10 +88,10 @@ ion-icon {
   border-radius: 20px;
 }
 .project-heading h3 {
-    color: #2E2E2E;
+  color: #2e2e2e;
 }
 .arrow-icon {
-    display: block !important;
+  display: block !important;
 }
 @media only screen and (max-width: 1300px) {
   .arrow-icon {
@@ -179,7 +179,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .header-profile a {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   color: #000;
   font-size: 14px;
@@ -458,7 +458,7 @@ ion-icon.md.hydrated {
   display: block;
   padding-left: 10px;
   white-space: nowrap;
-	font-size: 14px;
+  font-size: 14px;
 }
 .nav ul.nav-ul li.active-nav a {
   color: #5cc5d0;
@@ -468,28 +468,27 @@ ion-icon.md.hydrated {
 .nav ul.nav-ul li.active-nav a span svg path,
 .nav ul.nav-ul li.active-nav a span svg line {
   stroke: #5cc5d0;
-	
 }
 .nav ul.nav-ul li.active-nav:nth-child(4) svg path {
   fill: #5cc5d0;
 }
 .nav ul.nav-ul li.active-nav:nth-child(5) svg path {
   fill: #5cc5d005;
-    stroke: #5cc5d0;
+  stroke: #5cc5d0;
 }
 .nav ul.nav-ul li.active-nav:nth-child(6) svg path {
   fill: #5cc5d0;
 }
 .nav ul.nav-ul li.active-nav:nth-child(7) svg path {
-   stroke: #5cc5d0;
+  stroke: #5cc5d0;
 }
 .nav ul.nav-ul li.active-nav:nth-child(8) svg path {
-    stroke: #5cc5d0;
-    fill: #5cc5d0;
+  stroke: #5cc5d0;
+  fill: #5cc5d0;
 }
 .nav ul.nav-ul li.active-nav:nth-child(9) svg path {
-    stroke: #5cc5d0;
-    fill: #5cc5d0;
+  stroke: #5cc5d0;
+  fill: #5cc5d0;
 }
 .nav ul.nav-ul li.active-nav:nth-child(10) svg path {
   fill: #5cc5d0;
@@ -498,8 +497,8 @@ ion-icon.md.hydrated {
   fill: #5cc5d0;
 }
 .nav ul.nav-ul li.active-nav:nth-child(12) svg path {
-   stroke: #5cc5d0;
-    fill: #5cc5d0;
+  stroke: #5cc5d0;
+  fill: #5cc5d0;
 }
 .nav ul.nav-ul li.active-nav:nth-child(13) svg path {
   fill: #5cc5d0;
@@ -685,7 +684,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 }
 .right-side h3 {
   margin: 10px 0;
-	font-size: 18px;
+  font-size: 18px;
 }
 .trending-feed-box {
   height: 150px;
