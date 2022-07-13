@@ -273,7 +273,7 @@ input[type="search"]::-webkit-search-cancel-button {
   top: 80px;
   left: 0;
   width: 20%;
-  z-index: 21;
+  /* z-index: 21; */
   padding-bottom: 20px;
 }
 .chat-line-right p {
