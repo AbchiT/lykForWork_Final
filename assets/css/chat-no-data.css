@@ -22,9 +22,11 @@
   border-radius: 20px;
   width: 80%;
   background-color: #F5F6F8;
-    padding: 5px 35px 5px 5px;
+  padding: 5px 35px 5px 12px;
   border: #F5F6F8;
   outline: #F5F6F8;
+  font-size: 14px;
+  color: #2E2E2E;
 }
 .chat-search-li input:focus {
   outline: none;
@@ -63,6 +65,9 @@
   height: 50px;
   border-radius: 50%;
 }
+.chat-head p {
+font-size: 18px;
+}
 .chat-head::after {
   position: absolute;
   content: "";
@@ -90,9 +95,10 @@
 }
 .chat-inner .chat-text-left p {
   width: 80%;
-  background-color: rgba(223, 215, 215, 0.699);
+  background-color:#F3F3F3;
   padding: 10px;
-  border-radius: 10px;
+  border-radius:0 10px 10px 10px;
+  font-size: 15px;
 }
 /*  */
 .chat-inner .chat-text-right {
@@ -108,9 +114,10 @@
 }
 .chat-inner .chat-text-right p {
   width: 80%;
-  background-color: rgba(163, 155, 155, 0.699);
+  background-color:#DFE5F2;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 10px 0 10px 10px;
+  font-size: 15px;
 }
 .chat-inner-message-input {
   position: absolute;

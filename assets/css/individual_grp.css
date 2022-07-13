@@ -6,10 +6,14 @@
 }
 .right-top-right {
   margin-left: 15px;
+  margin-left: 15px;
+    position: relative;
+    top: -5px;
 }
 .right-top-right h5 {
   font-size: 18px;
   font-weight: 500;
+  
 }
 .right-head h3 {
   font-size: 20px;
@@ -70,7 +74,7 @@
 }
 .group-info {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-top: 8px;
 }
@@ -85,7 +89,7 @@
   margin-left: 35px;
 }
 .group-info-left {
-  margin-left: 80px;
+  margin-left: 135px;
 }
 .grp-description {
   margin-top: 30px;
@@ -159,7 +163,14 @@
   height: 15px;
   width: 15px;
 }
-
+.closeNew {
+  border: none !important;
+  float: right;
+  position: relative;
+  right: 15px;
+  top: -4px;
+ 
+ }
 .close:hover,
 .close:focus {
   color: #5cc5d0;
@@ -267,6 +278,8 @@
   padding: 10px;
   border-radius: 25px;
   font-size: 14px;
+  width: 133px;
+    height: 45px;
 }
 .meeting-wrapper .tabs {
   margin-bottom: 10px;
@@ -279,9 +292,9 @@
   display: block;
   line-height: 2.75em;
   height: 3em;
-  padding: 0 1.618em;
+  padding:0 2.918em;
   background: #fff;
-  color: #2c3e50;
+  color: #858988;
   cursor: pointer;
   top: 0;
   transition: all 0.25s;
@@ -329,12 +342,14 @@
   content: "";
   background-color: #fff;
   height: 100%;
-  width: 50px;
+  width: 198px;
+  border-radius: 80px;
 }
 .grp-toggle .tabs {
   display: flex;
   justify-content: flex-start;
   margin-top: 20px;
+  border-radius: 80px;
 }
 @media only screen and (max-width: 1024px) {
   .group-info {

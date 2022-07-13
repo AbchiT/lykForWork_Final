@@ -2,12 +2,12 @@
 .your-grp-carousel .item {
   background-color: #fff;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 30px;
 }
 .shared-grp-carousel .item {
   background-color: #fff;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 30px;
 }
 
 .project-heading a {
@@ -23,18 +23,21 @@
   justify-content: space-between;
   margin-bottom: 10px;
 }
+img.plus {
+  margin-right: 3px;
+}
 .your-grp-carousel .project-box-top {
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 .shared-grp-carousel .project-box-top {
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 .your-grp-carousel .project-box-top svg {
-  width: 15px;
+  width: 21px;
   margin-right: 10px;
 }
 .shared-grp-carousel .project-box-top svg {
-  width: 15px;
+  width: 21px;
   margin-right: 10px;
 }
 .your-grp-carousel .project-box-top a {
@@ -91,8 +94,8 @@
 }
 
 .your-grp-carousel .project-box-mid .project-bot-user-img img {
-  width: 24px;
-  height: 24px;
+  width: 23px;
+  height: 23px;
   border-radius: 50%;
   border: 1px solid #fff;
   position: absolute;
@@ -193,10 +196,12 @@
 .your-grp-carousel .project-box-mid p {
   color: #838383;
   margin-bottom: 20px;
+  font-size: 12px;
 }
 .shared-grp-carousel .project-box-mid p {
   color: #838383;
   margin-bottom: 20px;
+  font-size: 12px;
 }
 .your-grp-carousel .project-box-mid .project-bot-user-img {
   margin-bottom: 30px;
@@ -223,7 +228,7 @@
   height: 100%;
   overflow: auto;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 50;
 }
 
@@ -236,7 +241,7 @@
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 480px;
+  width: 517px;
   /* line-height: 1.5; */
   top: 50%;
   transform: translateY(-50%);
@@ -295,7 +300,7 @@
   position: relative;
 } */
 .modal-body {
-  padding: 45px 94px;
+  padding:45px 94px 27px;
   text-align: center;
 }
 .modal-body img {
@@ -356,7 +361,7 @@
   background: none;
   border: 1px solid #5cc5d0;
   border-radius: 30px;
-  padding: 10px 25px;
+  padding: 14px 39px;
   margin-right: 10px;
   color: #000;
 }
@@ -364,7 +369,7 @@
   background: #5cc5d0;
   color: #fff;
   border-radius: 30px;
-  padding: 10px 35px;
+  padding: 14px 39px;
   margin-right: 10px;
   border: none;
 }

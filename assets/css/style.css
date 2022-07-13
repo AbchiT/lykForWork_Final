@@ -80,12 +80,12 @@ ion-icon {
 }
 .arrow-icon {
   position: fixed;
-
-  top: 170px;
-  left: 19%;
+  top: 148px;
+  left: 18%;
   background: #fff;
-  padding: 1px 8px;
+  padding: 5px 15px;
   border-radius: 20px;
+  border: 1px solid #F5F5F5;
 }
 .project-heading h3 {
   color: #2e2e2e;
@@ -399,6 +399,7 @@ ion-icon.md.hydrated {
   transition: 0.5s;
   background-color: #fff;
   margin-top: 2px;
+  scrollbar-width: none;
 }
 
 .nav ul.nav-ul {
@@ -407,6 +408,7 @@ ion-icon.md.hydrated {
   left: 0;
   width: 100%;
   padding-top: 10px;
+  
 }
 .nav ul.nav-ul li {
   position: relative;
@@ -424,12 +426,13 @@ ion-icon.md.hydrated {
 .nav ul.nav-ul li.active-nav::before {
   content: "";
   position: absolute;
-  width: 4px;
-  height: 100%;
+  width: 5px;
+  height: 26px;
   background-color: #5cc5d0;
   border-radius: 0 10px 10px 0;
-  top: 0;
+  top: 50%;
   left: 0;
+  transform: translateY(-50%);
 }
 
 .nav ul.nav-ul li a {
@@ -699,6 +702,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 .trending-feed-box h4 {
   font-size: 14px;
   text-align: center;
+  color: #2E2E2E;
 }
 .trending-feed-box img {
   width: 12%;
@@ -728,12 +732,12 @@ table.ui-datepicker-calendar tbody td.highlight > a {
   flex-direction: column;
 }
 .today-meet-box p {
-  padding: 7px 0 7px 14px;
+  padding: 7px 0 0 14px;
   font-size: 14px;
   color: #999494;
   position: relative;
   margin: 0 20px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .today-meet-box p::after {
   position: absolute;
@@ -884,6 +888,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 .right-side .ui-datepicker-calendar tr td a {
   width: 30px;
   height: 30px;
+  font-size: 15px;
 }
 /* dashboard pending section */
 .pending-dash-heading {
