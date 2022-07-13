@@ -642,18 +642,18 @@
               </select>
             </li>
             <li class="tool">
-              <button type="button" data-command="bold" class="tool--btn">
+              <button type="button" data-command="bold" class="tool--btn" id="tool-bold">
                 <i class="' fas fa-bold"></i>B
               </button>
             </li>
             <li class="tool">
-              <button type="button" data-command="italic" class="tool--btn">
+              <button type="button" data-command="italic" class="tool--btn" id="tool-italic">
                 <i class="' fas fa-italic"></i>I
               </button>
             </li>
             <li class="tool">
-              <button type="button" data-command="underline" class="tool--btn">
-                <i class="' fas fa-underline"></i>U
+              <button type="button" data-command="underline" class="tool--btn" id="tool-underline">
+                <u>U</u>
               </button>
             </li>
 
@@ -800,13 +800,21 @@
                 </div>
                
               </div>
+              <a href="javascript:;" class="notes-add-btn" style="padding: 5px 8px;
+              border-radius: 15px;
+              background-color: #5cc5d0;
+              color: #fff;
+              font-size: 14px;
+              position: absolute;
+              right: 0;
+              top: 20px;">+ Add Notes</a>
             </div>
 
 
 
 
 
-
+            
 
           </div>
           
@@ -835,9 +843,41 @@
               for today
             </h4>
           </div>
-          <h3>Today's Meetings</h3>
+          <div class="dash-meet-heading">
+            <h3>Today's Meetings <span>04</span></h3>
+            <a href="meet-with-no-data.html">View All</a>
+          </div>
+  
           <div class="today-meet-box">
-            <p>No Meeting schedule</p>
+            <p class="t-day-dash">
+              <span class="todeysmeet-p-left"
+                >11:00 AM <br />
+                Task Management</span
+              >
+              <span class="todeysmeet-p-right"><a href="#">Join</a></span>
+            </p>
+            <p class="t-day-dash">
+              <span class="todeysmeet-p-left"
+                >11:00 AM <br />
+                Task Management</span
+              >
+              <span class="todeysmeet-p-right"><a href="#">Join</a></span>
+            </p>
+            <p class="t-day-dash">
+              <span class="todeysmeet-p-left"
+                >11:00 AM <br />
+                Task Management</span
+              >
+              <span class="todeysmeet-p-right"><a href="#">Join</a></span>
+            </p>
+            <p class="t-day-dash">
+              <span class="todeysmeet-p-left"
+                >11:00 AM <br />
+                Task Management</span
+              >
+              <span class="todeysmeet-p-right"><a href="#">Join</a></span>
+            </p>
+            
           </div>
         </div>
         </section>
