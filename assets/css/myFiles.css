@@ -17,10 +17,12 @@
   flex-wrap: wrap;
 }
 .my-files .tabs {
-  margin: 0;
+  margin: -7px 0 0;
 }
 .chats-content h2 {
-  font-weight: 500;
+  font-weight: 400;
+    font-size: 26px;
+    color: #2E2E2E;
 }
 .folder-item-top {
   margin-bottom: 50px;
@@ -197,6 +199,20 @@
 .modal-wrap {
   height: 500px;
   overflow: scroll;
+}
+.folder-item.row-all-center {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.folder-item.row-all-center p{
+  font-size: 14px;
+  font-weight: 500;
+  color: #5CC5D0;
+  margin-top: 10px;
+}
+.folder-item.file-box.row-all-center p {
+  color: #2E2E2E;
 }
 @media only screen and (max-width: 1400px) {
   .folder-item-top {
