@@ -328,7 +328,7 @@
               <span class="title">Groups</span>
             </a>
           </li>
-          <li class="list active-nav">
+          <li class="list">
             <a href="project-zero-data.html">
               <span class="icon"
                 ><svg
@@ -467,7 +467,7 @@
               <span class="title">Events</span>
             </a>
           </li>
-          <li class="list">
+          <li class="list active-nav">
             <a href="#">
               <span class="icon"
                 ><svg
@@ -626,8 +626,8 @@
         <div class="add_task_btn row-all-between">
           <div class="row">
             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0.7" y="0.7" width="19.6" height="19.6" rx="9.8" stroke="#2E2E2E" stroke-width="1.4"></rect>
-                    <path d="M10.5 1V9.3391C10.5 10.0927 11.3019 10.5755 11.9679 10.2229L19 6.5" stroke="#2E2E2E" stroke-width="1.4"></path>
+                    <rect x="0.7" y="0.7" width="19.6" height="19.6" rx="9.8" stroke="#ccc" stroke-width="1.4"></rect>
+                    <path d="M10.5 1V9.3391C10.5 10.0927 11.3019 10.5755 11.9679 10.2229L19 6.5" stroke="#ccc" stroke-width="1.4"></path>
             </svg>
             <p>No pending tasks found</p>
         </div>
@@ -639,22 +639,22 @@
           <form>
             <input type="name" class="form-control2" id="exampleInputTitle" aria-describedby="TitleHelp" placeholder="Title of the task">
             <div class="row">
-            <input type="text" class="form-control" id="exampleInputAssigned_by" aria-describedby="Assigned_byHelp" placeholder="Assigned by">
-            <input type="text" class="form-control" id="exampleInputAssigned_to" aria-describedby="Assigned_toHelp" placeholder="Assigned to">
+            <input type="text" class="form-control" id="exampleInputAssigned_by" aria-describedby="Assigned_byHelp" placeholder="Assigned By">
+            <input type="text" class="form-control" id="exampleInputAssigned_to" aria-describedby="Assigned_toHelp" placeholder="Assigned To">
             </div>
             <div class="row">
-            <input type="text" class="form-control" id="exampleInputDate" aria-describedby="DateHelp" placeholder="Date of assignment">
-            <input type="text" class="form-control" id="exampleInputDate" aria-describedby="DateHelp" placeholder="Due date">
+            <input type="text" class="form-control" id="exampleInputDate" aria-describedby="DateHelp" placeholder="Date of Assignment">
+            <input type="text" class="form-control" id="exampleInputDate" aria-describedby="DateHelp" placeholder="Due Date">
             </div>
             <textarea rows="5" cols="20" class="form-control2" placeholder="Details of the task"></textarea>
           </form>
           <div class="add_task_btn row-all-between">
           <div class="row">
-            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.7" y="0.7" width="19.6" height="19.6" rx="9.8" stroke="#2E2E2E" stroke-width="1.4"></rect>
                     <path d="M10.5 1V9.3391C10.5 10.0927 11.3019 10.5755 11.9679 10.2229L19 6.5" stroke="#2E2E2E" stroke-width="1.4"></path>
-            </svg>
-            <label for="add-file" id="btnCapture" class="d-none">Add files</label>
+            </svg> -->
+            <label for="add-file" id="btnCapture" class="d-none">Add Files</label>
                <input style="display: none;" type="file" id="add-file"/>
         </div>
         <ion-icon name="add-outline"></ion-icon>
@@ -669,11 +669,12 @@
         <h3 class="h3-heading">Files / Folders</h3>
         <div class="add_task_btn row-all-between">
           <div class="row">
-            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0.7" y="0.7" width="19.6" height="19.6" rx="9.8" stroke="#2E2E2E" stroke-width="1.4"></rect>
-                    <path d="M10.5 1V9.3391C10.5 10.0927 11.3019 10.5755 11.9679 10.2229L19 6.5" stroke="#2E2E2E" stroke-width="1.4"></path>
-            </svg>
-            <label for="upload-file" id="btnCapture" class="d-none">No pending tasks found</label>
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.004 10.2323C20.4796 9.52277 19.7481 8.69177 18.9455 7.89527C18.143 7.09877 17.3057 6.37277 16.5908 5.85227C15.3727 4.96577 14.7817 4.86377 14.4432 4.86377H6.75285C5.71152 4.86377 4.86365 5.70527 4.86365 6.73877V19.9888C4.86365 21.0223 5.71152 21.8638 6.75285 21.8638H20.1108C21.1521 21.8638 22 21.0223 22 19.9888V12.3638C22 12.0278 21.8972 11.4413 21.004 10.2323ZM17.8755 8.95727C18.601 9.67727 19.1692 10.3253 19.5894 10.8638H15.953V7.25627C16.4956 7.67327 17.15 8.23727 17.874 8.95727H17.8755ZM20.4886 19.9888C20.4886 20.1928 20.3164 20.3638 20.1108 20.3638H6.75285C6.65301 20.3626 6.55758 20.3227 6.48698 20.2526C6.41637 20.1826 6.37619 20.0879 6.37501 19.9888V6.73877C6.37501 6.53627 6.54731 6.36377 6.75285 6.36377H14.4432V11.6138C14.4432 11.8127 14.5228 12.0034 14.6645 12.1441C14.8062 12.2848 14.9985 12.3638 15.1989 12.3638H20.4886V19.9888Z" fill="#CCCCCC" stroke="white" stroke-width="0.2"/>
+              <path d="M13.7058 1.99027C12.4897 1.10218 11.8997 1 11.5618 1H2.88603C1.84645 1 1 1.84301 1 2.87835V18.1592C1 19.0668 1.64879 19.8257 2.50882 20V2.87835C2.50882 2.67549 2.68234 2.50268 2.88603 2.50268H14.3636C14.1484 2.3261 13.9286 2.15524 13.7043 1.99027H13.7058Z" fill="#CCCCCC" stroke="white" stroke-width="0.2"/>
+              </svg>
+              
+            <label for="upload-file" id="btnCapture" class="d-none">Right now no data available</label>
 <input type="file" id="upload-file" style="display: none;">
 
         </div>
@@ -689,7 +690,10 @@
         <h3>My Team</h3>
         <div class="my-team-add-btn-dashboard">
           <a href="#">
-            <ion-icon name="add-outline"></ion-icon>
+            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.7 11.1549V10.9549H7.5H0.375C0.290434 10.9549 0.2 10.8767 0.2 10.7565V8.36615C0.2 8.24592 0.290434 8.16776 0.375 8.16776H7.5H7.7V7.96776V0.398388C7.7 0.27816 7.79043 0.2 7.875 0.2H10.125C10.2096 0.2 10.3 0.27816 10.3 0.398388V7.96776V8.16776H10.5H17.625C17.7096 8.16776 17.8 8.24592 17.8 8.36615V10.7565C17.8 10.8767 17.7096 10.9549 17.625 10.9549H10.5H10.3V11.1549V18.7242C10.3 18.8445 10.2096 18.9226 10.125 18.9226H7.875C7.79043 18.9226 7.7 18.8445 7.7 18.7242V11.1549Z" fill="#5CC5D0" stroke="white" stroke-width="0.4"/>
+              </svg>
+              
           </a>
         </div>
       </div>
