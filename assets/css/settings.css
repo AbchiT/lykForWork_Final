@@ -51,6 +51,9 @@
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 50;
 }
+section.content {
+  margin-top: 131px;
+}
 
 /* Modal Content */
 .modal-content {
@@ -71,6 +74,7 @@
   animation-name: animatetop;
   animation-duration: 0.4s;
 }
+
 
 @-webkit-keyframes animatetop {
   from {

@@ -760,10 +760,10 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 .content {
   width: 55%;
   margin: 0 auto;
-  margin-top: 153px;
+  margin-top: 126px;
 }
 .dashboard-heading {
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 }
 .dashboard-heading h2 {
   font-weight: 400;
@@ -1486,7 +1486,18 @@ table.ui-datepicker-calendar tbody td.highlight > a {
 }
 .ui-datepicker-calendar tr {
   margin-bottom: 15px;
-  color: #9b9191;
+  color: #272727;
+}
+.right-side .ui-datepicker-header a.ui-datepicker-prev{
+  left: 4px;
+}
+.right-side .ui-datepicker-header a.ui-datepicker-next{
+  right: 23px;
+}
+.right-side .ui-datepicker-title {
+  text-align: center;
+  position: relative;
+  left: -12px;
 }
 .ui-datepicker-calendar tr td {
   text-align: center;
