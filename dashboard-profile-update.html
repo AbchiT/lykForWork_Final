@@ -668,6 +668,9 @@
 
           <div class="profile-image">
             <img src="assets/img/profile.jpg" />
+            <div class="profile-ban-change">
+              <input type="file" class="profile-ban-btn" />
+            </div>
           </div>
         </div>
         <div class="profile-content-wrap row">
@@ -688,9 +691,10 @@
               <p>Phone</p>
               <input
                 id="phone"
-                type="tel"
+                type="number"
                 name="phone"
-                value="+91 987 456 1234"
+                value=""
+                placeholder="Phone Number"
               />
               <img src="assets/img/tick-icon.png" alt="" />
             </div>
@@ -715,10 +719,10 @@
             <div class="profile-item">
               <p>Gender</p>
               <select name="gender" id="gender">
-                <option value="select The Gender">Your Gender</option>
+                <option value="select The Gender">Select Gender</option>
                 <option selected value="male">Male</option>
                 <option value="female">Female</option>
-                <option value="others">Transgender</option>
+                <option value="others">Other</option>
               </select>
             </div>
             <div class="profile-item">
