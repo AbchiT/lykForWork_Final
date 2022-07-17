@@ -128,6 +128,7 @@ $(".project-carousel").owlCarousel({
   loop: true,
   margin: 10,
   nav: true,
+  navText:["<div class='nav-btn prev-slide'><img src='assets/icon/arrow-prev.png'/></div>","<div class='nav-btn next-slide'><img src='assets/icon/arrow-next.png'/></div>"],
   dots: false,
   responsive: {
     0: {
