@@ -9,12 +9,14 @@
   margin-bottom: 10px;
   border-radius: 15px;
 }
-.feed-top input {
+.feed-top input, .feed-top a.feed-input {
   width: 70%;
-  height: 30px;
+  height: 45px;
    border-radius: 10px;
-   background-color: rgb(217 217 217 / 10%);
-   border: 1px solid #E1E2E5;
+   background-color: #fff;
+   border: 1px solid #E1E2E6;
+   padding: 0 12px;
+   cursor: text;
 }
 .feed-row {
   flex-wrap: wrap;

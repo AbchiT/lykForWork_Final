@@ -303,6 +303,8 @@
 }
 .preview-wrap {
   margin-bottom: 30px;
+  background: #fff;
+  border-radius: 10px;
 }
 @media only screen and (max-width: 1024px) {
   .add-event-wrap {
