@@ -83,8 +83,8 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
-  /*background-color: rgba(0, 0, 0, 0.4);*/
+  /* background-color: rgb(0, 0, 0); */
+  background-color:rgba(0, 0, 0, 0.8);
   z-index: 50;
 }
 
@@ -150,18 +150,19 @@
 }
 
 .modal-header {
-  padding: 12px 10px;
+  padding: 12px 10px 0 10px;
   text-align: center;
 }
 .modal-header h2{
   font-weight:normal;
+  margin-top: 23px;
 }
 .modal-body {
   padding: 10px 25px;
 }
 .modal-body img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   margin-right: 15px;
 }
@@ -175,7 +176,7 @@
 }
 .modal-member {
   position: relative;
-  padding: 10px;
+  padding: 5px 10px;
 }
 .modal-body a.modal-member:nth-child(1) {
   color: #5cc5d0;
@@ -185,24 +186,27 @@
 }
 .my-file-modal-right-icon {
   position: absolute;
-  right: 0;
+  right: 27px;
 }
 .modal-btn {
   margin: 10px 0;
   margin-bottom: 23px;
 }
 .modal-btn a {
-  padding: 8px 10px;
   background-color: #5cc5d0;
-  border-radius: 20px;
+  border-radius: 80px;
   margin: 0 auto;
   font-size: 14px;
   font-weight: 500;
   color: #fff;
-  margin-left: 30%;
+  width: 152px;
+  height: 45px;
+  display: block;
+  text-align: center;
+  line-height: 43px;
 }
 .modal-wrap {
-  height: 500px;
+  height: 469px;
   overflow: scroll;
 }
 .add-event-link {
@@ -273,7 +277,7 @@
   width: 100%;
 }
 .preview-ban {
-  margin-bottom: 25px;
+  margin-bottom: 8px;
 }
 .preview-wrap h2 {
   font-size: 20px;
@@ -326,13 +330,14 @@
 .add-event-people-btn button {
   background: #5cc5d0;
   border: none;
-  padding: 10px 20px;
   border-radius: 20px;
   color: #fff;
+  width: 107px;
+  height: 26px;
 }
-.add-event-btn{
+/* .add-event-btn{
   margin-left: 69%;
-}
+} */
 
 @media only screen and (max-width: 1275px) {
   .add-event-btn {

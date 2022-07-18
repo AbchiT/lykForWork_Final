@@ -13,6 +13,11 @@
   border-radius: 25px;
   font-size: 14px;
   margin-right: 55px;
+  width: 64px;
+  height: 26px;
+  padding: 0 !important;
+  text-align: center;
+  line-height: 23px;
 }
 
 .project-content .project-line {
@@ -202,7 +207,12 @@
   background-color: transparent !important;
   color: #000;
 }
-
+.owl-carousel .owl-nav button.owl-prev{
+  margin-top: 2px;
+}
+.owl-carousel .owl-nav button.owl-next{
+margin-top: 1px;
+}
 .owl-next {
   position: absolute;
   left: 372%;

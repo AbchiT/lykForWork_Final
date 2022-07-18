@@ -1,6 +1,6 @@
 /*individual-project-creation css*/
 .individual-project-creation {
-  margin-top: 153px;
+  margin-top: 128px;
 }
 
 .individual-project-creation .row-all-between {
@@ -33,18 +33,33 @@
 
 .individual-project-creation .form-control {
   width: 50%;
-  padding: 10px;
+  padding: 0 10px;
   margin: 10px;
   border: 1px solid #E1E2E5;
-border-radius: 10px;
+  border-radius: 10px;
+  color: #858988;
+  height: 45px;
+  font-family: "lato", sans-serif;
+}
+.individual-project-creation .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #858988;
+  opacity: 1; /* Firefox */
 }
 
+.individual-project-creation .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #858988;
+}
+
+.individual-project-creation .form-control::-ms-input-placeholder { /* Microsoft Edge */
+  color: #858988;
+}
 .individual-project-creation .form-control1 {
   width: 53%;
   padding: 10px;
   margin: 10px;
   border: 1px solid #E1E2E5;
 border-radius: 10px;
+color: #858988;
 }
 
 .individual-project-creation .form-control2 {
@@ -58,7 +73,7 @@ border-radius: 10px;
 
 .individual-project-creation .project-topic .box1 {
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 20px;
   margin: 0 0 30px;
 }
@@ -70,7 +85,7 @@ border-radius: 10px;
 .individual-project-creation .add_task_btn {
   background-color: #fff;
   padding: 0 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 30px;
   width: 289px;
   height: 66px;
@@ -164,8 +179,8 @@ border-radius: 10px;
 
 .individual-project-creation .my-team-add-btn-dashboard a {
   display: flex;
-  width: 50px;
-  height: 50px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
   align-items: center;
   background-color: #fff;

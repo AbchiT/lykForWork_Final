@@ -1,5 +1,5 @@
 .chat-content .nav {
-  width: 30%;
+  width: 206px;
   border-radius: 15px;
   height: 80vh;
 }
@@ -18,10 +18,10 @@
   position: relative;
 }
 .chat-search-li input {
-  height: 30px;
-  border-radius: 20px;
+  height: 45px;
+  border-radius: 80px;
   width: 80%;
-  background-color: #F5F6F8;
+  background-color: #F3F3F3;
   padding: 5px 35px 5px 12px;
   border: #F5F6F8;
   outline: #F5F6F8;
@@ -34,20 +34,20 @@
 }
 .chat-search-li button {
   position: absolute;
-  right: 65px;
+  right: 59px;
   top: 52%;
   transform: translateY(-50%);
   background: none;
   border: none;
 }
-.chat-search-li svg{
+/* .chat-search-li svg{
   width: 14px;
-}
+} */
 .chat-wrap {
   justify-content: space-between;
 }
 .chat-box {
-  width: 67%;
+  width: 70%;
   height: 80vh;
   background-color: #fff;
   border-radius: 15px;
@@ -81,7 +81,7 @@ font-size: 18px;
   width: 90%;
   margin: 0 auto;
   margin-top: 40px;
-  height: 296px;
+  height: 325px;
   overflow: scroll;
 }
 .chat-inner .chat-text-left {
@@ -142,6 +142,11 @@ font-size: 18px;
   background-color: transparent;
   outline: none;
   border: none;
+}
+.chat-content h3{
+  margin-bottom: 15px;
+  font-size: 26px;
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 1024px) {

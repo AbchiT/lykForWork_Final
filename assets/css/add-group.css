@@ -67,6 +67,7 @@
   float: right;
   position: relative;
   right: 6px;
+  top: -15px;
 
 }
 
@@ -137,12 +138,13 @@
 .add-group-field input {
   margin-bottom: 5px;
   background: #fff;
-  border: 1px solid #a9a4a4;
-  height: 25px;
-  padding: 5px 7px;
+  border: 1px solid #E1E2E5;
+  height: 45px;
+  padding: 0 7px;
   border-radius: 10px;
   width: 300px;
 }
+
 .add-group-field input:focus {
   border: 1px solid #a9a4a485;
   outline: none;
@@ -151,11 +153,24 @@
   margin-bottom: 5px;
   background: #fff;
   border: 1px solid #a9a4a4;
-  height: 36px;
+  height: 45px;
   width: 180px;
   padding: 5px 10px;
   border-radius: 10px;
   margin-left: 5px;
+  color: #858988;
+  border: 1px solid #E1E2E5;
+}
+.add-group-field input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #858988;
+  opacity: 1; /* Firefox */
+}
+
+.add-group-field input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #858988;
+}
+
+.add-group-field input::-ms-input-placeholder { /* Microsoft Edge */
   color: #858988;
 }
 .add-group-field select:focus {
@@ -194,7 +209,7 @@
   background: #fff;
   width: 68%;
   border-radius: 10px;
-  padding: 30px 15px;
+  padding: 30px 30px 44px;
 }
 @media only screen and (max-width: 1024px) {
   .add-group-wrap {

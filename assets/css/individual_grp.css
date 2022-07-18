@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 .right-top-right {
   margin-left: 15px;
@@ -89,7 +89,7 @@
   margin-left: 35px;
 }
 .group-info-left {
-  margin-left: 135px;
+  margin-left: 126px;
 }
 .grp-description {
   margin-top: 30px;
@@ -167,8 +167,8 @@
   border: none !important;
   float: right;
   position: relative;
-  right: 15px;
-  top: -4px;
+  right: 6px;
+  top: -15px;
  
  }
 .close:hover,
@@ -180,15 +180,19 @@
 }
 
 .modal-header {
-  padding: 12px 0px;
+  padding: 25px 10px 12px 10px;
   text-align: center;
+}
+.modal-header h2 {
+  font-size: 26px;
+  font-weight: 400;
 }
 .modal-body {
   padding: 10px 25px;
 }
 .modal-body img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   margin-right: 15px;
 }
@@ -202,7 +206,7 @@
 }
 .modal-member {
   position: relative;
-  padding: 10px;
+  padding: 6px 10px;
 }
 .modal-body a.modal-member:nth-child(1) {
   color: #5cc5d0;
@@ -350,6 +354,11 @@
   justify-content: flex-start;
   margin-top: 20px;
   border-radius: 80px;
+}
+.admin-group-box {
+  background: #fff;
+  padding: 2px 15px 15px 15px;
+  border-radius: 0 0 10px 10px;
 }
 @media only screen and (max-width: 1024px) {
   .group-info {
