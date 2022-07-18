@@ -104,7 +104,7 @@
 }
 /* offline meet css  */
 .add-photo {
-  background: #7bced1;
+  background: #BDE1E4;
   height: 230px;
   border-radius: 10px;
   margin-bottom: 15px;
@@ -136,36 +136,58 @@
 }
 #event-name-off-meet {
   width: 46%;
-  padding: 10px;
-  border: 1px solid #a9a4a4;
-  border-radius: 5px;
+  padding: 0 10px;
+  border: 1px solid #E1E2E5;
+  border-radius: 10px;
   color: #a9a4a4;
+  height: 45px;
+}
+.form-row-1 input::placeholder, .form-row-2 input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #858988;
+  opacity: 1; /* Firefox */
+}
+
+.form-row-1 input:-ms-input-placeholder, .form-row-2 input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #858988;
+}
+
+.form-row-1 input::-ms-input-placeholder, .form-row-2 input::-ms-input-placeholder  { /* Microsoft Edge */
+  color: #858988;
 }
 #loc-off-meet {
   width: 46%;
-  padding: 10px;
-  border: 1px solid #a9a4a4;
-  border-radius: 5px;
+  padding: 0 10px;
+  border: 1px solid #E1E2E5;
+  border-radius: 10px;
   color: #a9a4a4;
+  height: 45px;
+  font-size: 14px;
+  
 }
 .form-row-2 {
   justify-content: space-between;
   margin-bottom: 10px;
   padding: 0 15px;
+
 }
 .form-row-2 input {
   width: 20%;
-  padding: 10px;
-  border: 1px solid #a9a4a4;
-  border-radius: 5px;
+  padding: 0 10px;
+  height: 45px;
+  border: 1px solid #E1E2E5;
+  border-radius: 10px;
   color: #a9a4a4;
   font-size: 14px;
+  font-size: 14px;
+
+  
 }
 textarea {
   width: 93%;
   height: 150px;
-  border: 1px solid #a9a4a4;
-  border-radius: 5px;
+  border: 1px solid #E1E2E5;
+
+  border-radius: 10px;
   color: #a9a4a4;
   padding: 10px;
   font-family: "Roboto";

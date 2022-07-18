@@ -18,12 +18,12 @@
 }
 #notes-table-wrapper #keywords thead tr th {
   font-weight: bold;
-  padding: 10px 0;
+  padding: 18px 0;
   font-size: 15px;
   width: 12%;
   color: #8f9bb3;
   text-align: center;
-  border-right: 1px solid rgba(172, 165, 165, 0.384);
+  /* border-right: 1px solid rgba(172, 165, 165, 0.384); */
 }
 #notes-table-wrapper #keywords thead tr th:first-child {
   width: 25%;
@@ -38,7 +38,7 @@
   color: #555;
 }
 #notes-table-wrapper #keywords tbody tr td {
-  padding: 15px 20px;
+  padding:9px 20px;
   font-size: 14px;
   text-align: center;
   border-right: 1px solid rgba(172, 165, 165, 0.384);
@@ -73,7 +73,10 @@
   right: 0;
   top: 20px;
 }
-
+.notes-p-toggle input[type="radio"] + label:after{
+  width: 12px;
+  height: 12px;
+}
 @media only screen and (max-width: 1100px) {
   #notes-table-wrapper {
     overflow: scroll;
