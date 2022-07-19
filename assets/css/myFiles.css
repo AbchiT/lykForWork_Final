@@ -86,7 +86,7 @@
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
-  z-index: 50;
+  z-index: 999;
 }
 
 /* Modal Content */
@@ -138,6 +138,8 @@
   border-radius: 50%;
   height: 15px;
   width: 15px;
+  position: relative;
+  top: -15px;
 }
 
 .close:hover,
