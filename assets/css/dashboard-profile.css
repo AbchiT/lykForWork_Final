@@ -186,6 +186,47 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+@media(max-width:1440px){
+  .profile-banner-wrap {
+    margin-bottom: 34px;
+}
+.profile-item p{
+  margin-bottom: 7px;
+}
+.profile-item {
+  margin-bottom: 13px;
+}
+.profile-edit-btn{
+  margin-top: 0;
+  padding-bottom: 0;
+}
+.profile-image {
+  bottom: -16%;
+}
+.profile-banner{
+  height: 181px;
+  overflow: hidden;
+}
+.profile-edit-btn a{
+  margin-bottom: 12px;
+  display: inline-block;
+}
+.profile-item h5{
+  font-size: 17px;
+}
+.Update-profile .profile-item input{
+  height: 26px;
+}
+.iti #phone {
+  height: 40px;
+}
+.Update-profile .profile-item img {
+  position: absolute;
+  right: -8px;
+  bottom: 11px;
+  width: 25px;
+}
+}
 @media only screen and (max-width: 1200px) {
 
   .profile-ban-change input {

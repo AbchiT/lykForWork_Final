@@ -210,6 +210,9 @@
 .owl-carousel .owl-nav button.owl-prev{
   margin-top: 2px;
 }
+.owl-carousel .owl-nav button.owl-prev span{
+  margin-left: 20px;
+}
 .owl-carousel .owl-nav button.owl-next{
 margin-top: 1px;
 }

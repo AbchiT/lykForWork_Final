@@ -85,7 +85,7 @@
   overflow: auto;
   /* background-color: rgb(0, 0, 0); */
   background-color:rgba(0, 0, 0, 0.8);
-  z-index: 50;
+  z-index: 99;
 }
 
 /* Modal Content */
@@ -335,6 +335,7 @@
   color: #fff;
   width: 107px;
   height: 26px;
+  font-size: 14px;
 }
 /* .add-event-btn{
   margin-left: 69%;
