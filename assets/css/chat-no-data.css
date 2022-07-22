@@ -1,6 +1,6 @@
 .chat-content .nav {
   width: 206px;
-  border-radius: 15px;
+  border-radius: 10px;
   height: 80vh;
 }
 .chat-content .nav img {
@@ -27,7 +27,23 @@
   outline: #F5F6F8;
   font-size: 14px;
   color: #2E2E2E;
+  font-family: "Lato";
+
 }
+
+.chat-search-li input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #2E2E2E;
+  opacity: 1; /* Firefox */
+}
+
+.chat-search-li input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #2E2E2E;
+}
+
+.chat-search-li input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #2E2E2E;
+}
+
 .chat-search-li input:focus {
   outline: none;
   border: none;
@@ -50,7 +66,7 @@
   width: 70%;
   height: 80vh;
   background-color: #fff;
-  border-radius: 15px;
+  border-radius: 10px;
   position: relative;
 }
 .chat-head {
@@ -148,7 +164,9 @@ font-size: 18px;
   font-size: 26px;
   font-weight: 400;
 }
-
+section.content.chat-content{
+  margin-top: 114px;
+}
 @media only screen and (max-width: 1024px) {
   .chat-content .chat-search-li button svg {
     width: 75%;

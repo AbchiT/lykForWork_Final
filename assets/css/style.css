@@ -888,6 +888,7 @@ table.ui-datepicker-calendar tbody td.highlight > a {
   position: relative;
   height: 85vh;
   overflow-x: hidden;
+  scrollbar-width: none;
 }
 .right-side .ui-datepicker-calendar tr td a {
   width: 30px;
