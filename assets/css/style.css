@@ -1319,6 +1319,555 @@ section.content.add-event-details{
   }
 }
 
+
+/* calendar */
+#Datepickk .d-year {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px;
+}
+.monthview{
+  height:487px;
+  width:100%;
+}
+#Datepickk .d-header p {
+  margin: 0.5em 0;
+  text-align: center;
+}
+
+.musicinfo {
+  display: none;
+}
+.notification-wrap {
+  background: rgba(0,0,0,0.8);
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  top: 79px;
+  display: none;
+}
+.notification-box{
+  width: 270px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  position: absolute;
+  right: 11%;
+  margin-right: -19px;
+  top: 8px;
+}
+.notification-box .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notification-box h2{
+  font-weight: 500;
+font-size: 16px;
+color: #2E2E2E;
+}
+.notification-box span a{
+margin-left: 10px;
+}
+.noti-list {
+  margin-top: 6px;
+}
+.noti-list h3{
+  font-weight: 500;
+  font-size: 14px;
+}
+.n-list-item{
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+.n-img{
+  width: 31px;
+  height: 31px;
+  border-radius: 80px;
+  overflow: hidden;
+  margin-top: 2px;
+}
+.n-info{
+  width: calc(100% - 31px);
+  padding-left: 11px;
+}
+.n-info h4{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #272727;
+}
+.n-info > div{
+  justify-content: space-between;
+  display: flex;
+  margin-top: 3px;
+}
+.n-info > div p{
+  font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+color: #5CC5D0;
+}
+.n-info > div span{
+display: flex;
+}
+.n-info > div span a{
+  margin-left: 8px;
+}
+.old-n-wrap{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+}
+.old-n-wrap a{
+  font-weight: 500;
+font-size: 14px;
+line-height: 40px;
+/* identical to box height, or 286% */
+color: #5CC5D0;
+}
+.read-n .n-info h4{
+color: #8F9BB3;
+}
+.read-n .n-info > div p{
+  color: #8F9BB3;
+  }
+.new-n{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.new-n a{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 40px;
+  /* identical to box height, or 286% */
+  color: #5CC5D0; 
+}
+
+/* No notification */
+.no-notification-list p{
+  font-size: 14px;
+line-height: 18px;
+/* or 129% */
+
+text-align: center;
+
+color: #2E2E2E;
+}
+.no-notification-list {
+  padding: 86px 0;
+}
+/* Search popup */
+
+.search-list-wrap {
+  background: rgba(0,0,0,0.8);
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  top: 79px;
+  /* display: none; */
+}
+.search-list-box{
+  width: 270px;
+  background: #fff;
+  border-radius: 10px;
+  position: absolute;
+  right: 31%;
+  margin-right: -19px;
+  top: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.search-list-box a{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 40px;
+  color: #2E2E2E;
+  padding: 0 19px;
+}
+.search-list-box a:hover{
+  background: rgba(92, 197, 208, 0.2);
+}
+
+/* Account popup */
+
+.account-wrap {
+  background: rgba(0,0,0,0.8);
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  top: 79px;
+  display: none;
+}
+.ac-list-box{
+  width: 270px;
+  background: #fff;
+  border-radius: 10px;
+  position: absolute;
+  right: 2%;
+  margin-right: -19px;
+  top: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.ac-list-box a{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 40px;
+  color: #2E2E2E;
+  padding: 0 19px;
+  overflow: hidden;
+}
+.ac-list-box a:hover{
+  background: rgba(92, 197, 208, 0.2);
+}
+
+
+/* Tooltip start */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #5CC5D0;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 12px;
+  position: absolute;
+  z-index: 1;
+  top: 131%;
+  left: 50%;
+  margin-left: -72px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #5CC5D0 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+/* datepicker */
+#Datepickk .d-table input+label text {
+  font-size: 18px;
+}
+#Datepickk.inline .d-calendar, #Datepickk.wrapped .d-calendar {
+
+  max-height: 432px;
+  margin-top: -84px;
+}
+#Datepickk .d-month {
+  color: #222B45;
+  font-size: 20px;
+}
+#Datepickk .d-year {
+  color: #8F9BB3;
+  font-size: 16px;
+}
+#Datepickk .d-tables:not(.locked) input:not(:checked)+label:not(.hidden):hover {
+  color: #222;
+  background-color: transparent;
+}
+#Datepickk .d-week>div p {
+  font-size: 16px;
+  color: #8F9BB3;
+}
+#Datepickk .d-table input+label:before {
+  top: 13.5%;
+  left: 30px;
+  width: 42px;
+  height: 42px;
+  background-color: #5cc5d0;
+  transition: transform .1s ease-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 90px;
+  background: rgba(92, 197, 208, 0.3);
+  border: 1px solid #5CC5D0;
+}
+#Datepickk .d-table input:checked+label {
+  color: #000;
+} 
+#Datepickk .d-table input+label.today:before{
+  transform: scaleX(1);
+  background:#5CC5D0
+}
+#Datepickk .d-table input+label.today text:before{
+  display: none;
+}
+#Datepickk .d-table input+label [data-tooltip]:after{
+  display: none;
+}
+#Datepickk .d-header i#d-next {
+  right: 20px;
+  border: 1px solid #E1E4EB;
+  border-radius: 2px;
+  background: none;
+}
+#Datepickk .d-header i#d-previous {
+  right: 20px;
+  border: 1px solid #E1E4EB;
+  border-radius: 2px;
+  background: none;
+}
+#Datepickk .d-header i#d-next:before{
+  background: url(../icon/c-next.svg) no-repeat;
+  width: 12px;
+  height: 19px;
+  /* background-size: cover; */
+  padding: 0;
+  margin: 0;
+  border: none;
+  top: 8px;
+  left: 11px;
+}
+#Datepickk .d-header i#d-previous:before{
+  background: url(../icon/c-prev.svg) no-repeat;
+  width: 12px;
+  height: 19px;
+  /* background-size: cover; */
+  padding: 0;
+  margin: 0;
+  border: none;
+  top: 8px;
+  left: 11px;
+}
+#Datepickk .d-header i#d-next:after{
+  border: none;
+}
+#Datepickk .d-header i#d-previous:after{
+  border: none;
+}
+#Datepickk .d-table input+label.today text{
+color: #fff;
+}
+
+/* right-side date picker */
+.right-side #Datepickk .d-month{
+  font-size: 18px;
+}
+.right-side #Datepickk.inline .d-calendar, .right-side #Datepickk.wrapped .d-calendar {
+  max-height: 432px;
+  margin-top: -42px;
+  border-radius: 17px;
+}
+.right-side #Datepickk .d-week>div p {
+  font-size: 14px;
+}
+.right-side #Datepickk .d-table input+label text {
+  font-size: 15px;
+}
+.right-side #Datepickk .d-year {
+  font-size: 12px;
+}
+.right-side #Datepickk .d-table input+label:before{
+  top: 26.4%;
+  left: 4px;
+  width: 26px;
+  height: 26px;
+}
+.right-side #Datepickk .d-header i{
+  height: 23px;
+  width: 23px;
+}
+.right-side #Datepickk .d-header i#d-previous{
+  transform: scale(1);
+}
+.right-side #Datepickk .d-header i#d-previous:before{
+  top: 6px;
+  left: 7px;
+}
+.right-side #Datepickk .d-header i#d-next:before{
+  top: 6px;
+  left: 7px;
+}
+.right-side #Datepickk .d-header i#d-next{
+  transform: scale(1);
+
+}
+.right-side #Datepickk .d-tables {
+  padding: 0 12px;
+}
+.right-side #Datepickk .d-weekdays {
+  padding: 0 12px;
+}
+.topSearchbar{
+  position: relative;
+}
+.topSearchbar:after{
+  content: "";
+  background: url(../icon/x-circle.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+
+}
+.appear-close {
+  background: #f3f3f3;
+  position: absolute;
+  right: 6px;
+  z-index: 99;
+  top: 8px;
+  display: none;
+}
+
+
+/* Weekview */
+.calendar-month-day-header {
+  width: 14.11% !important;
+}
+.calendar-categories{
+  display: none;
+}
+.calendar-events-day{
+  width: 14.1% !important;
+}
+.calendar-month{
+  border: none;
+}
+/* .calendar-month-day-header{
+  border: none;
+} */
+.calendar-month{
+  font-size: 18px;
+  /* padding: 15px 0;
+  height: auto !important; */
+}
+.calendar .calendar-events .calendar-event{
+  box-shadow: none;
+}
+.calendar .calendar-events .calendar-event:before {
+  content: "";
+  width: 4px;
+  position: absolute;
+  left: 0;
+  height: 29px;
+  background: #5CC5D0;
+  top: 11px;
+}
+.calendar .calendar-timeline {
+  /* margin-top: 115px !important; */
+}
+
+button.btn.btn-sm.btn-light.btn-move-calendar {
+  /* display: block; */
+  width: 32px;
+  height: 32px;
+  position: relative;
+  background: none;
+    border: none;
+}
+button.btn.btn-sm.btn-light.btn-move-calendar i.la-angle-left{
+content: "";
+left: 0;
+top: 0;
+background: url(../icon/left-a.png) no-repeat;
+width: 32px;
+height: 32px;
+position: absolute;
+}
+button.btn.btn-sm.btn-light.btn-move-calendar i.la-angle-right{
+  content: "";
+  right: 0;
+  top: 0;
+  background: url(../icon/right-a.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  }
+  .calendar-month button:last-child {
+    top: -3px;
+}
+.calendar-month button:first-child {
+  top: -6px;
+}
+.calendar-month span {
+  top: 5px !important;
+}
+.calendar-month-day-header>div {
+  text-align: center;
+  font-weight: 400;
+  color: #8F9BB3;
+  font-size: 16px;
+}
+.calendar-event {
+  background: #E2F7F7 !important;
+}
+.calendar .event-content {
+  color: #222B45;
+  display: block;
+  font-size: 14px;
+}
+.calendar .event-date {
+  font-size: 12px;
+  line-height: 1.2;
+  margin-bottom: 0.2em;
+  opacity: 1;
+  color: #272727;
+}
+.calendar .calendar-timeline li::after {
+  background: #EAEAEA;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 17px);
+  /* opacity: 0; */
+}
+.calendar .calendar-timeline li span{
+  transform: translateY(-26%);
+  color: #8F9BB3;
+  font-size: 12px;
+}
+.calendar .calendar-events .calendar-event a {
+  padding: 8px;
+}
+.calendar .calendar-events .calendar-day-header > span{
+  color: #8F9BB3;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 0 11px;
+}
+.calendar .calendar-timeline {
+  left: 23px;
+  width: 97%;
+}
+.calendar .calendar-events .calendar-event:last-of-type {
+  margin-right: 0;
+  
+}
+.calendar-events-day .calendar-day-header .btn-move-calendar i.la-angle-left {
+  transform: scale(0.7);
+}
+.calendar-events-day .calendar-day-header .btn-move-calendar i.la-angle-right {
+  transform: scale(0.7);
+  right: 11px !important;
+}
+div#calendar-modal .close {
+  display: none;
+}
+.right-side h3.t-feed {
+  margin-top: -36px;
+}
 @media only screen and (max-width: 1100px) {
   .content {
     width: 45%;

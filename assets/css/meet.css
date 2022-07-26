@@ -40,7 +40,11 @@
   border-radius: 15px;
   opacity: 0;
   transition: all 0.35s;
-  height: 432px;
+  height: auto;
+  /* height: 441px; */
+}
+.date-cal{
+  height: 441px;
 }
 .tab-switch:checked + .tab-label {
   background: #5cc5d0;
