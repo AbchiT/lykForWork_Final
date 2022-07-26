@@ -21,6 +21,8 @@
       sizes="16x16"
       href="assets/icon/favicon-16x16.png"
     />
+    <link rel="stylesheet" href="assets/css/datepickk.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/zenburn.min.css">
     <link rel="manifest" href="assets/icon/site.webmanifest" />
     <link rel="stylesheet" href="assets/css/notes-zero-data.css">
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -767,10 +769,10 @@
         <section class="right-side">
           <div class="right-side-wrap">
           <h3>Calendar</h3>
-          <div id="calendar"></div>
+           <div id="demoPicker2" class="monthview"></div>
           <!-- <div id="event"></div> -->
           <!-- Enter Date: <input type = "text" id = "datepicker"></p> -->
-          <h3>Trending Feed</h3>
+          <h3 class="t-feed">Trending Feed</h3>
           <div class="trending-feed-box">
             <img src="assets/img/icons/trending-feed-icon.svg" alt="" />
             <h4>
@@ -794,6 +796,8 @@
           type="module"
           src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
         ></script>
+        <script src="assets/js/datepickk.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
         <script
           nomodule
           src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
@@ -858,6 +862,15 @@ $(".custom-file").click(function () {
   $(".bg-all").toggleClass("opacitybg");
   $("body").toggleClass("opacitybgnav");
 });
+
+  // FOR RIGHT SIDE CALENDER
+  var now2 = new Date();
+  var demoPicker2 = new Datepickk({
+    container: document.querySelector('#demoPicker2'),
+    inline:true,
+    range: false,
+    tooltips:false,
+  });
     </script>
         <script src="assets/js/main.js"></script>
         
