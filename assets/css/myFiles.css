@@ -220,6 +220,11 @@
 .folder-item.file-box.row-all-center p {
   color: #2E2E2E;
 }
+span.close.closeNew {
+  border: none;
+  top: -17px;
+  right: 5px;
+}
 @media only screen and (max-width: 1400px) {
   .folder-item-top {
     justify-content: center;
