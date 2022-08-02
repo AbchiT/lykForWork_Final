@@ -166,6 +166,7 @@ section.content.add-group{
   margin-left: 5px;
   color: #858988;
   border: 1px solid #E1E2E5;
+  -webkit-appearance:none;
 }
 .add-group-field input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #858988;

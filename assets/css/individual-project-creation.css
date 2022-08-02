@@ -60,6 +60,7 @@
   border: 1px solid #E1E2E5;
 border-radius: 10px;
 color: #858988;
+-webkit-appearance:none;
 }
 
 .individual-project-creation .form-control2 {
