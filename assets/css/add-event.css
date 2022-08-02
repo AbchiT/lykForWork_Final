@@ -313,10 +313,9 @@
   background: #fff;
   border-radius: 10px;
 }
-
 .add-event-btn {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 @media only screen and (max-width: 1024px) {
   .add-event-wrap {
